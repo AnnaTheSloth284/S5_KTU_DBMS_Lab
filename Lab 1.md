@@ -266,14 +266,16 @@ varchar(15) not null);
 <br>SELECT CSTMR.NAME, SPLR.SNAME
 <br>FROM
 <br>   (SELECT DISTINCT NAME FROM CUSTOMER) CSTMR
-<br>   FULL OUTER JOIN
+<br>   JOIN
 <br>   (SELECT DISTINCT SNAME FROM SUPPLIER) SPLR
 <br>              ON CSTMR.NAME = SPLR.SNAME;
-<br>SELECT a.NAME, b.SNAME
-<br>FROM
-<br>( --Get the DISTICT Codes from all sets
-<br>    SELECT Distinct NAME from CUSTOMER
-<br>    UNION SELECT Distinct SNAME from SUPPLIER
-<br>) x Left JOIN
-<br>CUSTOMER a ON x.NAME = a.NAME LEFT JOIN
-<br>SUPPLIER b ON x.NAME = b.SNAME
+
+<br>+-----------------+-----------------+
+<br>| NAME            | SNAME           |
+<br>+-----------------+-----------------+
+<br>| Ivan Bayross    | Ivan Bayross    |
+<br>| Basu Navindgi   | Basu Navindgi   |
+<br>| Ravi Sreedharan | Ravi Sreedharan |
+<br>+-----------------+-----------------+
+<br>3 rows in set (0.00 sec)
+
