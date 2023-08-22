@@ -23,3 +23,12 @@ Aim: Write queries to create and retrieve customer and product relationship, con
 <br>P00003&emsp;&emsp;&emsp;&emsp;Tablet&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  HCL&emsp;&emsp;&emsp;&emsp;11000
 <br>P00004&emsp;&emsp;&emsp;&emsp;Garnet 50W led&emsp;&emsp;  Wipro&emsp;&emsp;&emsp;&emsp;999
 <br>P00005&emsp;&emsp;&emsp;&emsp;Laptop Charger&emsp;&emsp;&emsp;HCL&emsp;&emsp;&emsp;&emsp;1690
+
+<br><br>CUSTOMER
+<br>CUST_NO&emsp;NAME&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;AGE&emsp;&emsp;&emsp;CITY&emsp;PINCODE&emsp;STATE
+<br>C00001&emsp;&emsp;Ivan Bayross&emsp;&emsp;&emsp;  35&emsp;&emsp;&emsp;Bombay 400054 Maharashtra
+<br>C00002&emsp;&emsp;Vandana Saitwal &emsp;  35&emsp;&emsp;&emsp;Madras 780001 Tamilnadu
+<br>C00003&emsp;&emsp;Pramada Jaguste&emsp;55&emsp;&emsp;&emsp;Bombay 400057 Maharashtra
+<br>C00004&emsp;&emsp;Basu Navindgi &emsp;&emsp;  45&emsp;&emsp;&emsp;Bombay 400056 Maharashtra
+<br>C00005&emsp;&emsp;Ravi Sreedharan &emsp; 25&emsp;&emsp;&emsp;Delhi 100001 Delhi
+<br>C00006&emsp;&emsp;Rukmini &emsp;&emsp;&emsp;&emsp;&emsp; 25&emsp;&emsp;&emsp;Madras 780001 Tamilnadu
