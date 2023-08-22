@@ -8,10 +8,10 @@ Aim: Write queries to create and retrieve customer and product relationship, con
 
 <br>Sample instances are given below:
 <br><br>PURCHASE :
-<br>ORDER_NO&nmsp;CUSTNO&nmsp;PRODNO&nmsp;QUANTITY&nmsp;ORDERDATE
-<br>O00001&nmsp;C00002&nmsp;P00003&nmsp;2&nmsp;20-JAN-16
-<br>O00002&nmsp;C00003&nmsp;P00002&nmsp;1&nmsp;27-JAN-16
-<br>O00003&nmsp;C00006&nmsp;P00001&nmsp;3&nmsp;20-FEB-16
-<br>O00004&nmsp;C00003&nmsp;P00005&nmsp;4&nmsp;07-APR-16
-<br>O00005&nmsp;C00004&nmsp;P00002&nmsp;2&nmsp;22-MAY-16
-<br>O00006&nmsp;C00005&nmsp;P00004&nmsp;1&nmsp;26-MAY-16
+<br>ORDER_NO&emsp;CUSTNO&emsp;PRODNO&emsp;QUANTITY&emsp;ORDERDATE
+<br>O00001&emsp;C00002&emsp;P00003&emsp;2&emsp;20-JAN-16
+<br>O00002&emsp;C00003&emsp;P00002&emsp;1&emsp;27-JAN-16
+<br>O00003&emsp;C00006&emsp;P00001&emsp;3&emsp;20-FEB-16
+<br>O00004&emsp;C00003&emsp;P00005&emsp;4&emsp;07-APR-16
+<br>O00005&emsp;C00004&emsp;P00002&emsp;2&emsp;22-MAY-16
+<br>O00006&emsp;C00005&emsp;P00004&emsp;1&emsp;26-MAY-16
