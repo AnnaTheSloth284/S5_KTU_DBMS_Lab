@@ -263,3 +263,330 @@
 <br>|   105 | Watson |  45000 |
 <br>+-------+--------+--------+
 <br>2 rows in set (0.00 sec)
+
+<br>11.Return NAME and JOB of all female sales man and managers.
+<br>SELECT Name, Job
+<br>FROM Employee
+<br>WHERE Sex = 'F' AND (Job = 'SLSM' OR Job = 'MNGR');
+
+<br>+----------+------+
+<br>| Name     | Job  |
+<br>+----------+------+
+<br>| Smitha   | SLSM |
+<br>| Karthika | MNGR |
+<br>| Rita     | MNGR |
+<br>| Soosan   | SLSM |
+<br>+----------+------+
+<br>4 rows in set (0.00 sec)
+
+<br>12.Display EMPNO and NAME of employees in employee table who are a either manager or
+<br>a clerk in department 50.
+<br>SELECT Empno, Name
+<br>FROM Employee
+<br>WHERE (Job = 'MNGR' OR Job = 'CLRK') AND Dep_No = 50;
+
+<br>+-------+------+
+<br>| Empno | Name |
+<br>+-------+------+
+<br>|   110 | Tina |
+<br>|   210 | Rita |
+<br>+-------+------+
+<br>2 rows in set (0.00 sec)
+
+<br>13.List the name of employee who are neither a clerk nor a salesman.
+<br>SELECT Name
+<br>FROM Employee
+<br>WHERE Job NOT IN ('CLRK', 'SLSM');
+<br>+----------+
+<br>| Name     |
+<br>+----------+
+<br>| Roy      |
+<br>| Watson   |
+<br>| Alan     |
+<br>| Karthika |
+<br>| Rita     |
+<br>| Simpson  |
+<br>| Deepa    |
+<br>+----------+
+<br>7 rows in set (0.00 sec)
+
+
+<br>14.Return details of all clerks working in departments other than department 10.
+<br>SELECT *
+<br>FROM Employee
+<br>WHERE Job = 'CLRK' AND Dep_No <> 10;
+
+<br>+-------+------+------+--------+------+--------+------+
+<br>| Empno | Name | Job  | Salary | Comm | Dep_No | Sex  |
+<br>+-------+------+------+--------+------+--------+------+
+<br>|   110 | Tina | CLRK |  18000 | NULL |     50 | F    |
+<br>+-------+------+------+--------+------+--------+------+
+<br>1 row in set (0.00 sec)
+
+<br>15. Find names of employees containing letters U and E.
+<br>SELECT Name
+<br>FROM Employee
+<br>WHERE Name LIKE '%U%' AND Name LIKE '%E%';
+
+<br>Empty set (0.00 sec)
+
+<br>16.List all employee who earned commission.
+<br>SELECT *
+<br>FROM Employee
+<br>WHERE Comm IS NOT NULL AND Comm <> 0;
+
+<br>+-------+--------+------+--------+------+--------+------+
+<br>| Empno | Name   | Job  | Salary | Comm | Dep_No | Sex  |
+<br>+-------+--------+------+--------+------+--------+------+
+<br>|   101 | Smitha | SLSM |  25000 | 3000 |     40 | F    |
+<br>|   109 | Alan   | MNGR |  30000 | 8000 |     40 | M    |
+<br>|   220 | Soosan | SLSM |  28500 | 5300 |     60 | F    |
+<br>+-------+--------+------+--------+------+--------+------+
+<br>3 rows in set (0.01 sec)
+
+<br>17. Find EMPNO ,NAME and JOB of all females who are not managers.
+<br>SELECT Empno, Name, Job
+<br>FROM Employee
+<br>WHERE Sex = 'F' AND Job <> 'MNGR';
+
+<br>+-------+--------+-------+
+<br>| Empno | Name   | Job   |
+<br>+-------+--------+-------+
+<br>|   101 | Smitha | SLSM  |
+<br>|   110 | Tina   | CLRK  |
+<br>|   213 | Manacy | CLRK  |
+<br>|   215 | Deepa  | ANLST |
+<br>|   220 | Soosan | SLSM  |
+<br>+-------+--------+-------+
+<br>5 rows in set (0.00 sec)
+
+<br>18.Find EMPNO,NAME and SALARY of all employees who earn more than 10000 but less than 40000.
+<br>SELECT Empno, Name, Salary
+<br>FROM Employee
+<br>WHERE Salary > 10000 AND Salary < 40000;
+
+<br>+-------+----------+--------+
+<br>| Empno | Name     | Salary |
+<br>+-------+----------+--------+
+<br>|   100 | Wilson   |  17000 |
+<br>|   101 | Smitha   |  25000 |
+<br>|   103 | Roy      |  35000 |
+<br>|   109 | Alan     |  30000 |
+<br>|   110 | Tina     |  18000 |
+<br>|   200 | Karthika |  29000 |
+<br>|   210 | Rita     |  36500 |
+<br>|   213 | Manacy   |  16250 |
+<br>|   215 | Deepa    |  27000 |
+<br>|   220 | Soosan   |  28500 |
+<br>+-------+----------+--------+
+<br>10 rows in set (0.01 sec)
+
+<br>19.Use lN operator to find NAME and EMPNO of EMPLOYEE who are analyst or manager
+<br>ordered by NAME.
+<br>SELECT Name, Empno
+<br>FROM Employee
+<br>WHERE Job IN ('ANALYST', 'MNGR')
+<br>ORDER BY Name;
+
+<br>+----------+-------+
+<br>| Name     | Empno |
+<br>+----------+-------+
+<br>| Alan     |   109 |
+<br>| Karthika |   200 |
+<br>| Rita     |   210 |
+<br>| Watson   |   105 |
+<br>+----------+-------+
+<br>4 rows in set (0.00 sec)
+
+<br>20.Find the employee number, name and salary who been paid commission and whose salary
+<br>is greater than 30000 .
+<br>SELECT Empno, Name, Salary
+<br>FROM Employee
+<br>WHERE Comm IS NOT NULL AND Salary > 30000;
+
+<br>+-------+--------+--------+
+<br>| Empno | Name   | Salary |
+<br>+-------+--------+--------+
+<br>|   105 | Watson |  45000 |
+<br>+-------+--------+--------+
+<br>1 row in set (0.00 sec)
+
+<br>21.Find DEP-NO ,DEP-NAME, SALARY, JOB, SEX ordered by EMPNO within
+<br>Department
+<br>SELECT D.Dep_No AS "DEP-NO", D.Dep_Name AS "DEP-NAME", E.Salary, E.Job, E.Sex
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>ORDER BY D.Dep_No, E.Empno;
+
+<br>+--------+---------------+--------+-------+------+
+<br>| DEP-NO | DEP-NAME      | Salary | Job   | Sex  |
+<br>+--------+---------------+--------+-------+------+
+<br>|     10 | Accounting    |  17000 | CLRK  | M    |
+<br>|     10 | Accounting    |  29000 | MNGR  | F    |
+<br>|     10 | Accounting    |  16250 | CLRK  | F    |
+<br>|     30 | Research      |  35000 | ANLST | M    |
+<br>|     30 | Research      |  45000 | MNGR  | M    |
+<br>|     40 | Sales         |  25000 | SLSM  | F    |
+<br>|     40 | Sales         |  30000 | MNGR  | M    |
+<br>|     50 | Manufacturing |  18000 | CLRK  | F    |
+<br>|     50 | Manufacturing |  36500 | MNGR  | F    |
+<br>|     60 | Shipping      |   8250 | DRVR  | M    |
+<br>|     60 | Shipping      |  27000 | ANLST | F    |
+<br>|     60 | Shipping      |  28500 | SLSM  | F    |
+<br>+--------+---------------+--------+-------+------+
+<br>12 rows in set (0.00 sec)
+
+<br>22.Display the name of employee and dependant name if dependant is staying in the same
+<br>location where employee is working .
+<br>SELECT E.Name AS "Employee Name", D.Fname || ' ' || D.Lname AS "Dependant Name"
+<br>FROM Employee E
+<br>JOIN Dependant D ON E.Empno = D.Empno
+<br>JOIN Department Dep ON E.Dep_No = Dep.Dep_No
+<br>WHERE D.Place = Dep.Loc;
+
+<br>+---------------+----------------+
+<br>| Employee Name | Dependant Name |
+<br>+---------------+----------------+
+<br>| Simpson       |              0 |
+<br>+---------------+----------------+
+<br>1 row in set, 4 warnings (0.00 sec)
+
+<br>23.Find company location of employee named Watson.
+<br>SELECT D.Loc AS "Company Location"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Name = 'Watson';
+
+<br>+------------------+
+<br>| Company Location |
+<br>+------------------+
+<br>| Cochin           |
+<br>+------------------+
+<br>1 row in set (0.00 sec)
+
+<br>24.Find name, EMPNO,DEP-NAME for all employee who work in ‘Trichur’ and order by
+<br>EMPNO in descending order
+<br>SELECT E.Name, E.Empno, D.Dep_Name AS "DEP-NAME"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE D.Loc = 'Trichur'
+<br>ORDER BY E.Empno DESC;
+
+<br>+--------+-------+----------+
+<br>| Name   | Empno | DEP-NAME |
+<br>+--------+-------+----------+
+<br>| Alan   |   109 | Sales    |
+<br>| Smitha |   101 | Sales    |
+<br>+--------+-------+----------+
+<br>2 rows in set (0.00 sec)
+
+<br>25.Retrieve NAME and SALARY of all employee who earned more than average salary.
+<br>SELECT Name, Salary
+<br>FROM Employee
+<br>WHERE Salary > (SELECT AVG(Salary) FROM Employee);
+
+<br>+----------+--------+
+<br>| Name     | Salary |
+<br>+----------+--------+
+<br>| Roy      |  35000 |
+<br>| Watson   |  45000 |
+<br>| Alan     |  30000 |
+<br>| Karthika |  29000 |
+<br>| Rita     |  36500 |
+<br>| Deepa    |  27000 |
+<br>| Soosan   |  28500 |
+<br>+----------+--------+
+<br>7 rows in set (0.00 sec)
+
+<br>26.Find NAME, JOB, DEP NAME, LOCATION of all female employee order by EMPNAME.
+<br>SELECT E.Name, E.Job, D.Dep_Name AS "DEP NAME", D.Loc AS "LOCATION"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Sex = 'F'
+<br>ORDER BY E.Name;
+
+<br>+----------+-------+---------------+------------+
+<br>| Name     | Job   | DEP NAME      | LOCATION   |
+<br>+----------+-------+---------------+------------+
+<br>| Deepa    | ANLST | Shipping      | Trivandrum |
+<br>| Karthika | MNGR  | Accounting    | Cochin     |
+<br>| Manacy   | CLRK  | Accounting    | Cochin     |
+<br>| Rita     | MNGR  | Manufacturing | Kottayam   |
+<br>| Smitha   | SLSM  | Sales         | Trichur    |
+<br>| Soosan   | SLSM  | Shipping      | Trivandrum |
+<br>| Tina     | CLRK  | Manufacturing | Kottayam   |
+<br>+----------+-------+---------------+------------+
+<br>7 rows in set (0.00 sec)
+
+<br>27.Find the EMPNAME,DEP,NAME of all manager order by department name.
+<br>SELECT E.Name AS "EMPNAME", D.Dep_Name AS "DEP-NAME", E.Dep_No AS "DEP-NO"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Job = 'MNGR'
+<br>ORDER BY D.Dep_Name;
+
+<br>+----------+---------------+--------+
+<br>| EMPNAME  | DEP-NAME      | DEP-NO |
+<br>+----------+---------------+--------+
+<br>| Karthika | Accounting    |     10 |
+<br>| Rita     | Manufacturing |     50 |
+<br>| Watson   | Research      |     30 |
+<br>| Alan     | Sales         |     40 |
+<br>+----------+---------------+--------+
+<br>4 rows in set (0.01 sec)
+
+<br>28.Find NAME and DEP-NAME of employee who earns highest salary.
+<br>SELECT E.Name, D.Dep_Name AS "DEP-NAME"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Salary = (SELECT MAX(Salary) FROM Employee);
+
+<br>+--------+----------+
+<br>| Name   | DEP-NAME |
+<br>+--------+----------+
+<br>| Watson | Research |
+<br>+--------+----------+
+<br>1 row in set (0.00 sec)
+
+<br>29.Find name, department name, commission of all employee who paid commission order by Name.
+<br>SELECT E.Name, D.Dep_Name AS "DEP-NAME", E.Comm
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Comm IS NOT NULL AND E.Comm <> 0
+<br>ORDER BY E.Name;
+
+<br>+--------+----------+------+
+<br>| Name   | DEP-NAME | Comm |
+<br>+--------+----------+------+
+<br>| Alan   | Sales    | 8000 |
+<br>| Smitha | Sales    | 3000 |
+<br>| Soosan | Shipping | 5300 |
+<br>+--------+----------+------+
+<br>3 rows in set (0.00 sec)
+
+<br>30.Display employee name and department name of all employees working in departments
+<br>that has at least three employees. Order the output in alphabetical order first by department
+<br>name and then by employee name.
+<br>SELECT E.Name AS "Employee Name", D.Dep_Name AS "Department Name"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Dep_No IN (
+<br>    SELECT Dep_No
+<br>    FROM Employee
+<br>    GROUP BY Dep_No
+<br>    HAVING COUNT(*) >= 3
+<br>)
+<br>ORDER BY D.Dep_Name, E.Name;
+
+<br>+---------------+-----------------+
+<br>| Employee Name | Department Name |
+<br>+---------------+-----------------+
+<br>| Karthika      | Accounting      |
+<br>| Manacy        | Accounting      |
+<br>| Wilson        | Accounting      |
+<br>| Deepa         | Shipping        |
+<br>| Simpson       | Shipping        |
+<br>| Soosan        | Shipping        |
+<br>+---------------+-----------------+
+<br>6 rows in set (0.00 sec)
+
