@@ -184,18 +184,7 @@ SELECT Name, Salary
 <br>FROM Employee
 <br>WHERE Salary > (SELECT AVG(Salary) FROM Employee);
 
-<br>+----------+--------+
-<br>| Name     | Salary |
-<br>+----------+--------+
-<br>| Roy      |  35000 |
-<br>| Watson   |  45000 |
-<br>| Alan     |  30000 |
-<br>| Karthika |  29000 |
-<br>| Rita     |  36500 |
-<br>| Deepa    |  27000 |
-<br>| Soosan   |  28500 |
-<br>+----------+--------+
-<br>7 rows in set (0.00 sec)
+<img width="413" alt="Screenshot 2023-09-02 at 1 31 53 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/e28ed0b6-a339-48ef-af42-56ed5f72a39d">
 
 ##### 26.Find NAME, JOB, DEP NAME, LOCATION of all female employee order by EMPNAME.
 SELECT E.Name, E.Job, D.Dep_Name AS "DEP NAME", D.Loc AS "LOCATION"
@@ -204,18 +193,7 @@ SELECT E.Name, E.Job, D.Dep_Name AS "DEP NAME", D.Loc AS "LOCATION"
 <br>WHERE E.Sex = 'F'
 <br>ORDER BY E.Name;
 
-<br>+----------+-------+---------------+------------+
-<br>| Name     | Job   | DEP NAME      | LOCATION   |
-<br>+----------+-------+---------------+------------+
-<br>| Deepa    | ANLST | Shipping      | Trivandrum |
-<br>| Karthika | MNGR  | Accounting    | Cochin     |
-<br>| Manacy   | CLRK  | Accounting    | Cochin     |
-<br>| Rita     | MNGR  | Manufacturing | Kottayam   |
-<br>| Smitha   | SLSM  | Sales         | Trichur    |
-<br>| Soosan   | SLSM  | Shipping      | Trivandrum |
-<br>| Tina     | CLRK  | Manufacturing | Kottayam   |
-<br>+----------+-------+---------------+------------+
-<br>7 rows in set (0.00 sec)
+<img width="529" alt="Screenshot 2023-09-02 at 1 32 20 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/7baa12b3-7b54-4889-be1c-0eb5c291c0c7">
 
 ##### 27.Find the EMPNAME,DEP,NAME of all manager order by department name.
 SELECT E.Name AS "EMPNAME", D.Dep_Name AS "DEP-NAME", E.Dep_No AS "DEP-NO"
@@ -224,15 +202,7 @@ SELECT E.Name AS "EMPNAME", D.Dep_Name AS "DEP-NAME", E.Dep_No AS "DEP-NO"
 <br>WHERE E.Job = 'MNGR'
 <br>ORDER BY D.Dep_Name;
 
-<br>+----------+---------------+--------+
-<br>| EMPNAME  | DEP-NAME      | DEP-NO |
-<br>+----------+---------------+--------+
-<br>| Karthika | Accounting    |     10 |
-<br>| Rita     | Manufacturing |     50 |
-<br>| Watson   | Research      |     30 |
-<br>| Alan     | Sales         |     40 |
-<br>+----------+---------------+--------+
-<br>4 rows in set (0.01 sec)
+<img width="580" alt="Screenshot 2023-09-02 at 1 32 57 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/36998690-133a-440d-a830-abc915080a66">
 
 ##### 28.Find NAME and DEP-NAME of employee who earns highest salary.
 SELECT E.Name, D.Dep_Name AS "DEP-NAME"
@@ -240,12 +210,7 @@ SELECT E.Name, D.Dep_Name AS "DEP-NAME"
 <br>JOIN Department D ON E.Dep_No = D.Dep_No
 <br>WHERE E.Salary = (SELECT MAX(Salary) FROM Employee);
 
-<br>+--------+----------+
-<br>| Name   | DEP-NAME |
-<br>+--------+----------+
-<br>| Watson | Research |
-<br>+--------+----------+
-<br>1 row in set (0.00 sec)
+<img width="420" alt="Screenshot 2023-09-02 at 1 33 31 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/070da178-989f-431f-b6a5-51bb255449ac">
 
 ##### 29.Find name, department name, commission of all employee who paid commission order by Name.
 SELECT E.Name, D.Dep_Name AS "DEP-NAME", E.Comm
