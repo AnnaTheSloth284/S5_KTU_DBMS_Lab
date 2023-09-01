@@ -143,9 +143,6 @@ SELECT Empno, Name, Salary
 <br>FROM Employee
 <br>WHERE Comm IS NOT NULL AND Salary > 30000;
 
-<br>+-------+--------+--------+
-<br>| Empno | Name   | Salary |
-<br>+-------+--------+--------+
-<br>|   105 | Watson |  45000 |
-<br>+-------+--------+--------+
-<br>1 row in set (0.00 sec)
+<img width="212" alt="Screenshot 2023-09-02 at 1 20 34 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/2de44aa5-2273-47d4-90bd-1f3ef23688b0">
+
+##### 
