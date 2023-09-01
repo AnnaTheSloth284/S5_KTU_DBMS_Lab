@@ -21,3 +21,13 @@
 <br>    FOREIGN KEY (Dep_No) REFERENCES Department(Dep_No)
 <br>);
 
+<br>Dependant Table Creation and Data Insertion
+<br>CREATE TABLE Dependant (
+<br>    Pid INT NOT NULL,
+<br>    Fname VARCHAR(15) NOT NULL,
+<br>    Lname VARCHAR(15) NOT NULL,
+<br>    Place VARCHAR(15) NOT NULL,
+<br>    Empno INT NOT NULL,
+<br>    PRIMARY KEY (Pid),
+<br>    FOREIGN KEY (Empno) REFERENCES Employee(Empno)
+<br>);
