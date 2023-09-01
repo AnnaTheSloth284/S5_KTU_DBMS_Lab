@@ -3,6 +3,7 @@
 ##### 1. List all customers in Madras<br>
 SELECT * FROM CUSTOMER
 <br>WHERE CITY='Madras';
+<img width="476" alt="Screenshot 2023-09-01 at 5 51 40 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/7727664e-9fcd-413c-8366-e3ecb004fa98">
 
 ##### 2. List all customer- numbers of all who purchase the product in the month of January<br>
 SELECT CUSTNO FROM PURCHASE
