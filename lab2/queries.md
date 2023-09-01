@@ -21,34 +21,14 @@ SELECT *
 <br>WHERE Sex = 'F'
 <br>ORDER BY Name;
 
-<br>+-------+----------+-------+--------+------+--------+------+
-<br>| Empno | Name     | Job   | Salary | Comm | Dep_No | Sex  |
-<br>+-------+----------+-------+--------+------+--------+------+
-<br>|   215 | Deepa    | ANLST |  27000 | NULL |     60 | F    |
-<br>|   200 | Karthika | MNGR  |  29000 | NULL |     10 | F    |
-<br>|   213 | Manacy   | CLRK  |  16250 | NULL |     10 | F    |
-<br>|   210 | Rita     | MNGR  |  36500 | NULL |     50 | F    |
-<br>|   101 | Smitha   | SLSM  |  25000 | 3000 |     40 | F    |
-<br>|   220 | Soosan   | SLSM  |  28500 | 5300 |     60 | F    |
-<br>|   110 | Tina     | CLRK  |  18000 | NULL |     50 | F    |
-<br>+-------+----------+-------+--------+------+--------+------+
-<br>7 rows in set (0.00 sec)
+<img width="428" alt="Screenshot 2023-09-02 at 12 47 22 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/a94453a0-2b72-40b1-ab69-ae80edfa5f55">
 
 ##### 4. Find Minimum, Maximum and Average salary of employees in each department.
 SELECT Dep_No, MIN(Salary) AS Min_Salary, MAX(Salary) AS Max_Salary, AVG(Salary) AS Avg_Salary
 <br>FROM Employee
 <br>GROUP BY Dep_No;
 
-<br>+--------+------------+------------+------------+
-<br>| Dep_No | Min_Salary | Max_Salary | Avg_Salary |
-<br>+--------+------------+------------+------------+
-<br>|     10 |      16250 |      29000 | 20750.0000 |
-<br>|     30 |      35000 |      45000 | 40000.0000 |
-<br>|     40 |      25000 |      30000 | 27500.0000 |
-<br>|     50 |      18000 |      36500 | 27250.0000 |
-<br>|     60 |       8250 |      28500 | 21250.0000 |
-<br>+--------+------------+------------+------------+
-<br>5 rows in set (0.00 sec)
+<img width="567" alt="Screenshot 2023-09-02 at 12 47 51 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/d11e5249-f96a-4b08-a175-c61618262e73">
 
 ##### 5. Find Maximum and Minimum commission paid(COMM),total commission paid and count of employees who were paid with commission.
 SELECT MAX(Comm) AS Max_Comm, MIN(Comm) AS Min_Comm, SUM(Comm) AS Total_Comm, COUNT(*) AS Count_With_Comm
