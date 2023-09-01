@@ -63,6 +63,8 @@ SELECT AVG(PRICE)
 SELECT CUSTNO FROM PURCHASE
 <br>ORDER BY QUANTITY ASC;
 
+<img width="254" alt="Screenshot 2023-09-01 at 6 12 11 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/c023c5f7-58c6-483f-b38c-08d6b9a84b13">
+
 ##### 12.Update product number of customer number C00003 to P00008.<br>
 UPDATE PURCHASE
 <br>SET PRODNO='P00008'
