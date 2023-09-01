@@ -82,6 +82,8 @@ SELECT COUNT(CUST_NO) FROM CUSTOMER
 SELECT CUSTNO FROM PURCHASE
 <br>WHERE QUANTITY>3;
 
+
+
 ##### 15.Modify the structure of order date field in the purchase into character.<br>
 ALTER TABLE PURCHASE
 <br>ALTER  ORDERDATE VARCHAR(10);
