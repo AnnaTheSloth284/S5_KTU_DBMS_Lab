@@ -15,17 +15,7 @@
 <br>       ('P00004', 'Garnet 50W led', 'Wipro', 999),
 <br>       ('P00005', 'Laptop Charger', 'HCL', 1690);
 
-<br>select * from product;
-<br>+------------+------------------+---------+-------+
-<br>| PRODUCT_NO | DESCRIPTION      | COMPANY | PRICE |
-<br>+------------+------------------+---------+-------+
-<br>| P00001     | 12 W Flood Light | Wipro   |  5000 |
-<br>| P00002     | Laptop Adapter   | Dell    |  1560 |
-<br>| P00003     | Tablet           | HCL     | 11000 |
-<br>| P00004     | Garnet 50W led   | Wipro   |   999 |
-<br>| P00005     | Laptop Charger   | HCL     |  1690 |
-<br>+------------+------------------+---------+-------+
-<br>5 rows in set (0.01 sec)
+<img width="369" alt="Screenshot 2023-09-01 at 5 39 34 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/9039e3db-7b6f-461d-aba8-bb67864bfda6">
 
 <br>INSERT INTO SUPPLIER(S_NO, SNAME, AGE, CITY)
 <br>VALUES ('S001', 'Ivan Bayross', 35, 'Bombay'),
