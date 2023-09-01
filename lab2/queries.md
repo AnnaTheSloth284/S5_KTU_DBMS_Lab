@@ -135,15 +135,7 @@ SELECT Name, Empno
 <br>WHERE Job IN ('ANALYST', 'MNGR')
 <br>ORDER BY Name;
 
-<br>+----------+-------+
-<br>| Name     | Empno |
-<br>+----------+-------+
-<br>| Alan     |   109 |
-<br>| Karthika |   200 |
-<br>| Rita     |   210 |
-<br>| Watson   |   105 |
-<br>+----------+-------+
-<br>4 rows in set (0.00 sec)
+<img width="285" alt="Screenshot 2023-09-02 at 1 14 01 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/7367626a-640a-4e5e-940f-a2431f47e7aa">
 
 ##### 20.Find the employee number, name and salary who been paid commission and whose salary is greater than 30000 .
 SELECT Empno, Name, Salary
