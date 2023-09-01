@@ -35,28 +35,14 @@ SELECT MAX(Comm) AS Max_Comm, MIN(Comm) AS Min_Comm, SUM(Comm) AS Total_Comm, CO
 <br>FROM Employee
 <br>WHERE Comm IS NOT NULL;
 
-<br>+----------+----------+------------+-----------------+
-<br>| Max_Comm | Min_Comm | Total_Comm | Count_With_Comm |
-<br>+----------+----------+------------+-----------------+
-<br>| 8000     | 0        |      16300 |               4 |
-<br>+----------+----------+------------+-----------------+
-<br>1 row in set (0.00 sec)
+<img width="597" alt="Screenshot 2023-09-02 at 12 49 46 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/b50f3dcf-a73f-4984-bd03-d39867efa1a5">
 
 ##### 6. Number of employees listed in each job.
 <br>SELECT Job, COUNT(*) AS Num_Employees
 <br>FROM Employee
 <br>GROUP BY Job;
 
-+-------+---------------+
-<br>| Job   | Num_Employees |
-<br>+-------+---------------+
-<br>| CLRK  |             3 |
-<br>| SLSM  |             2 |
-<br>| ANLST |             2 |
-<br>| MNGR  |             4 |
-<br>| DRVR  |             1 |
-<br>+-------+---------------+
-<br>5 rows in set (0.01 sec)
+<img width="321" alt="Screenshot 2023-09-02 at 12 50 28 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/c6e20c74-0424-4a9b-96a4-523f2d75a9ad">
 
 ##### 7. Total salary paid to each job in the category.
 SELECT Job, SUM(Salary) AS Total_Salary
