@@ -5,13 +5,7 @@ SELECT *
 <br>WHERE Dep_No = 40
 <br>ORDER BY Empno;
 
-<br>+-------+--------+------+--------+------+--------+------+
-<br>| Empno | Name   | Job  | Salary | Comm | Dep_No | Sex  |
-<br>+-------+--------+------+--------+------+--------+------+
-<br>|   101 | Smitha | SLSM |  25000 | 3000 |     40 | F    |
-<br>|   109 | Alan   | MNGR |  30000 | 8000 |     40 | M    |
-<br>+-------+--------+------+--------+------+--------+------+
-<br>2 rows in set (0.00 sec)
+<img width="410" alt="Screenshot 2023-09-02 at 12 45 14 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/aa16483a-492a-4449-8a32-a0e8cc9447f7">
 
 ##### 2. Return details of all employees in department 40 ordered by EMPNO.
 SELECT *
@@ -19,18 +13,7 @@ SELECT *
 <br>WHERE Sex = 'F'
 <br>ORDER BY Name;
 
-+-------+----------+-------+--------+------+--------+------+
-<br>| Empno | Name     | Job   | Salary | Comm | Dep_No | Sex  |
-<br>+-------+----------+-------+--------+------+--------+------+
-<br>|   215 | Deepa    | ANLST |  27000 | NULL |     60 | F    |
-<br>|   200 | Karthika | MNGR  |  29000 | NULL |     10 | F    |
-<br>|   213 | Manacy   | CLRK  |  16250 | NULL |     10 | F    |
-<br>|   210 | Rita     | MNGR  |  36500 | NULL |     50 | F    |
-<br>|   101 | Smitha   | SLSM  |  25000 | 3000 |     40 | F    |
-<br>|   220 | Soosan   | SLSM  |  28500 | 5300 |     60 | F    |
-<br>|   110 | Tina     | CLRK  |  18000 | NULL |     50 | F    |
-<br>+-------+----------+-------+--------+------+--------+------+
-<br>7 rows in set (0.00 sec)
+![Uploading Screenshot 2023-09-02 at 12.45.45 AM.png…]()
 
 ##### 3. Return information about all female employee ordered by NAME.
 SELECT *
