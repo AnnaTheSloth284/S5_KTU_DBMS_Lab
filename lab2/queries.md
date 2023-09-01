@@ -219,14 +219,7 @@ SELECT E.Name, D.Dep_Name AS "DEP-NAME", E.Comm
 <br>WHERE E.Comm IS NOT NULL AND E.Comm <> 0
 <br>ORDER BY E.Name;
 
-<br>+--------+----------+------+
-<br>| Name   | DEP-NAME | Comm |
-<br>+--------+----------+------+
-<br>| Alan   | Sales    | 8000 |
-<br>| Smitha | Sales    | 3000 |
-<br>| Soosan | Shipping | 5300 |
-<br>+--------+----------+------+
-<br>3 rows in set (0.00 sec)
+<img width="211" alt="Screenshot 2023-09-02 at 1 36 15 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/f1adb6fc-104b-4219-bccd-95ec06f25374">
 
 ##### 30.Display employee name and department name of all employees working in departments that has at least three employees. Order the output in alphabetical order first by department name and then by employee name.
 SELECT E.Name AS "Employee Name", D.Dep_Name AS "Department Name"
