@@ -119,7 +119,7 @@ SELECT Empno, Name, Job
 <br>FROM Employee
 <br>WHERE Sex = 'F' AND Job <> 'MNGR';
 
-
+<img width="292" alt="Screenshot 2023-09-02 at 1 12 39 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/4c6459c6-2e57-4fcc-a18e-7058762fade9">
 
 
 ##### 18.Find EMPNO,NAME and SALARY of all employees who earn more than 10000 but less than 40000.
