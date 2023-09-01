@@ -40,8 +40,12 @@ SELECT * FROM CUSTOMER
 SELECT COMPANY FROM PRODUCT
 <br>ORDER BY PRICE ASC;
 
+<img width="255" alt="Screenshot 2023-09-01 at 6 02 46 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/ce51624a-c236-44fe-8b2c-8527d1b75f8f">
+
 ##### 8. Calculate average age of customers from table customer.<br>
 SELECT AVG(AGE) FROM CUSTOMER;
+
+<img width="274" alt="Screenshot 2023-09-01 at 6 03 11 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/21efd509-beb0-4f58-a359-f5d821d3167a">
 
 ##### 9. List cities of customers from states Maharashtra & Tamil Nadu.<br>
 SELECT CITY FROM CUSTOMER 
