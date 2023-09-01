@@ -76,6 +76,8 @@ UPDATE PURCHASE
 SELECT COUNT(CUST_NO) FROM CUSTOMER
 <br>WHERE CITY='Delhi';
 
+<img width="311" alt="Screenshot 2023-09-01 at 6 18 29 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/98bbb2e9-8b48-4191-985e-cdb939d4ce95">
+
 ##### 14. List customer number of all customers who have purchased more than 3 items.<br>
 SELECT CUSTNO FROM PURCHASE
 <br>WHERE QUANTITY>3;
