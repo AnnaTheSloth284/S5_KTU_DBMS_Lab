@@ -14,7 +14,7 @@ SELECT *
 <br>2 rows in set (0.00 sec)
 
 ##### 2. Return details of all employees in department 40 ordered by EMPNO.
-<br>SELECT *
+SELECT *
 <br>FROM Employee
 <br>WHERE Sex = 'F'
 <br>ORDER BY Name;
@@ -33,7 +33,7 @@ SELECT *
 <br>7 rows in set (0.00 sec)
 
 ##### 3. Return information about all female employee ordered by NAME.
-<br>SELECT *
+SELECT *
 <br>FROM Employee
 <br>WHERE Sex = 'F'
 <br>ORDER BY Name;
@@ -52,7 +52,7 @@ SELECT *
 <br>7 rows in set (0.00 sec)
 
 ##### 4. Find Minimum, Maximum and Average salary of employees in each department.
-<br>SELECT Dep_No, MIN(Salary) AS Min_Salary, MAX(Salary) AS Max_Salary, AVG(Salary) AS Avg_Salary
+SELECT Dep_No, MIN(Salary) AS Min_Salary, MAX(Salary) AS Max_Salary, AVG(Salary) AS Avg_Salary
 <br>FROM Employee
 <br>GROUP BY Dep_No;
 
@@ -68,7 +68,7 @@ SELECT *
 <br>5 rows in set (0.00 sec)
 
 ##### 5. Find Maximum and Minimum commission paid(COMM),total commission paid and count of employees who were paid with commission.
-<br>SELECT MAX(Comm) AS Max_Comm, MIN(Comm) AS Min_Comm, SUM(Comm) AS Total_Comm, COUNT(*) AS Count_With_Comm
+SELECT MAX(Comm) AS Max_Comm, MIN(Comm) AS Min_Comm, SUM(Comm) AS Total_Comm, COUNT(*) AS Count_With_Comm
 <br>FROM Employee
 <br>WHERE Comm IS NOT NULL;
 
@@ -84,7 +84,7 @@ SELECT *
 <br>FROM Employee
 <br>GROUP BY Job;
 
-<br>+-------+---------------+
++-------+---------------+
 <br>| Job   | Num_Employees |
 <br>+-------+---------------+
 <br>| CLRK  |             3 |
@@ -96,7 +96,7 @@ SELECT *
 <br>5 rows in set (0.01 sec)
 
 ##### 7. Total salary paid to each job in the category.
-<br>SELECT Job, SUM(Salary) AS Total_Salary
+SELECT Job, SUM(Salary) AS Total_Salary
 <br>FROM Employee
 <br>GROUP BY Job;
 
@@ -112,7 +112,7 @@ SELECT *
 <br>5 rows in set (0.00 sec)
 
 ##### 8. Return all DEPT_ÑOs in employee table(Ensure that each DEPT_ÑO appears only once).
-<br>SELECT DISTINCT Dep_No
+SELECT DISTINCT Dep_No
 <br>FROM Employee;
 
 <br>+--------+
@@ -127,7 +127,7 @@ SELECT *
 <br>5 rows in set (0.00 sec)
 
 ##### 9. Return EMPNO,NAME and SALARY of females in department 10.
-<br>SELECT Empno, Name, Salary
+SELECT Empno, Name, Salary
 <br>FROM Employee
 <br>WHERE Sex = 'F' AND Dep_No = 10;
 
@@ -140,7 +140,7 @@ SELECT *
 <br>2 rows in set (0.00 sec)
 
 ##### 10.Return EMPNO, NAME and SALARY of all male managers ordered by NAME.
-<br>SELECT Empno, Name, Salary
+SELECT Empno, Name, Salary
 <br>FROM Employee
 <br>WHERE Sex = 'M' AND Job = 'MNGR'
 <br>ORDER BY Name;
