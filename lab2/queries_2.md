@@ -111,12 +111,7 @@ SELECT DISTINCT Job
 <br>FROM Employee
 <br>WHERE Dep_No = 30 AND Job NOT IN (SELECT DISTINCT Job FROM Employee WHERE Dep_No = 40);
 
-<br>+-------+
-<br>| Job   |
-<br>+-------+
-<br>| ANLST |
-<br>+-------+
-<br>1 row in set (0.00 sec)
+<img width="667" alt="Screenshot 2023-09-02 at 1 45 11 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/15f469ca-e5f2-49a6-a3f7-d90e668bb292">
 
 ##### 34.List out job and salary of employees in department l0 and 40 who draw the same salary (result- no record found).
 SELECT E1.Job, E1.Salary
@@ -124,7 +119,7 @@ SELECT E1.Job, E1.Salary
 <br>JOIN Employee E2 ON E1.Salary = E2.Salary
 <br>WHERE E1.Dep_No = 10 AND E2.Dep_No = 40;
 
-<br>Empty set (0.00 sec)
+<img width="343" alt="Screenshot 2023-09-02 at 1 45 39 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/94d55ead-9c7e-4dce-aee3-f855f0cec174">
 
 ##### 35.Create a view to display EMPNO' NAME ' JOB of employee from employee table who works as manager.
 CREATE VIEW ManagerView AS
@@ -132,32 +127,24 @@ CREATE VIEW ManagerView AS
 <br>FROM Employee
 <br>WHERE Job = 'MNGR';
 
-<br>Query OK, 0 rows affected (0.00 sec)
+<img width="265" alt="Screenshot 2023-09-02 at 1 46 06 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/f551fdca-3634-4415-b9ec-9bdcdefb3916">
 
 ##### 36.Select EMPNO, NAME,JOB and SALARY of employee who works as clerk and having salary greater than 1650.
 SELECT Empno, Name, Job, Salary
 <br>FROM Employee
 <br>WHERE Job = 'CLRK' AND Salary > 1650;
 
-<br>+-------+--------+------+--------+
-<br>| Empno | Name   | Job  | Salary |
-<br>+-------+--------+------+--------+
-<br>|   100 | Wilson | CLRK |  17000 |
-<br>|   110 | Tina   | CLRK |  18000 |
-<br>|   213 | Manacy | CLRK |  16250 |
-<br>+-------+--------+------+--------+
-<br>3 rows in set (0.00 sec)
+<img width="320" alt="Screenshot 2023-09-02 at 1 46 32 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/cfeebad1-1c3f-471e-a907-baf0ab6945f9">
 
 ##### 37.Create an index for column FNAME and LNAME in Dependant table.
 CREATE INDEX idx_name ON Dependant (Fname, Lname);
 
-<br>Query OK, 0 rows affected (0.02 sec)
-<br>Records: 0  Duplicates: 0  Warnings: 0
+<img width="413" alt="Screenshot 2023-09-02 at 1 47 00 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/9ffa499d-693d-4f2b-a32d-0689518bc27f">
 
 ##### 38.Delete person with ID=1031 in Dependant table.
 DELETE FROM Dependant WHERE Pid = 1031;
 
-<br>Query OK, 1 row affected (0.00 sec)
+<img width="336" alt="Screenshot 2023-09-02 at 1 47 28 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/a8ef5662-1b47-4b44-9952-de96bc10f09b">
 
 ##### 39.Return EMPNO,NAME and SALARY of any one of the females in department 10.
 SELECT Empno, Name, Salary
@@ -165,15 +152,10 @@ SELECT Empno, Name, Salary
 <br>WHERE Sex = 'F' AND Dep_No = 10
 <br>LIMIT 1;
 
-<br>+-------+----------+--------+
-<br>| Empno | Name     | Salary |
-<br>+-------+----------+--------+
-<br>|   200 | Karthika |  29000 |
-<br>+-------+----------+--------+
-<br>1 row in set (0.00 sec)
+<img width="278" alt="Screenshot 2023-09-02 at 1 47 53 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/01a1c622-a567-4691-bd18-01bc4ae12494">
 
 ##### 40.Delete the employee Karthika with all her dependants.
 DELETE FROM Employee WHERE Name = 'Karthika';
 <br>DELETE FROM Dependant WHERE Empno IN (SELECT Empno FROM Employee WHERE Name = 'Karthika');
 
-<br>Query OK, 2 rows affected (0.00 sec)
+<img width="542" alt="Screenshot 2023-09-02 at 1 48 38 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/ee214d4b-858e-417a-b147-c749ae28f1de">
