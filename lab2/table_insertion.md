@@ -1,6 +1,5 @@
-
-
-<br>INSERT INTO Department (Dep_No, Dep_Name, Loc, Mgr, Exp_Bdg, Rev_Bdg)
+### Table Insertions
+INSERT INTO Department (Dep_No, Dep_Name, Loc, Mgr, Exp_Bdg, Rev_Bdg)
 <br>VALUES
 <br>    (60, 'Shipping', 'Trivandrum', 215, 90000, 0),
 <br>    (10, 'Accounting', 'Cochin', 200, 100000, 0),
@@ -8,6 +7,7 @@
 <br>    (40, 'Sales', 'Trichur', 109, 280000, 8000),
 <br>    (50, 'Manufacturing', 'Kottayam', 210, 130000, 0);
 
+<img width="465" alt="Screenshot 2023-09-02 at 12 18 42 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/9e1d31ad-2273-44a4-9e4d-5afab7e989da">
 
 <br>INSERT INTO Employee (Empno, Name, Job, Salary, Dep_No, Sex)
 <br>VALUES
