@@ -49,44 +49,20 @@ SELECT Job, SUM(Salary) AS Total_Salary
 <br>FROM Employee
 <br>GROUP BY Job;
 
-<br>+-------+--------------+
-<br>| Job   | Total_Salary |
-<br>+-------+--------------+
-<br>| CLRK  |        51250 |
-<br>| SLSM  |        53500 |
-<br>| ANLST |        62000 |
-<br>| MNGR  |       140500 |
-<br>| DRVR  |         8250 |
-<br>+-------+--------------+
-<br>5 rows in set (0.00 sec)
+<img width="336" alt="Screenshot 2023-09-02 at 12 52 26 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/8fd222d5-00e8-4edf-a6f6-8dae6f84e8bf">
 
 ##### 8. Return all DEPT_ÑOs in employee table(Ensure that each DEPT_ÑO appears only once).
 SELECT DISTINCT Dep_No
 <br>FROM Employee;
 
-<br>+--------+
-<br>| Dep_No |
-<br>+--------+
-<br>|     10 |
-<br>|     30 |
-<br>|     40 |
-<br>|     50 |
-<br>|     60 |
-<br>+--------+
-<br>5 rows in set (0.00 sec)
+<img width="222" alt="Screenshot 2023-09-02 at 12 53 10 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/a659735b-48cb-4f15-8748-3086720fda9a">
 
 ##### 9. Return EMPNO,NAME and SALARY of females in department 10.
 SELECT Empno, Name, Salary
 <br>FROM Employee
 <br>WHERE Sex = 'F' AND Dep_No = 10;
 
-<br>+-------+----------+--------+
-<br>| Empno | Name     | Salary |
-<br>+-------+----------+--------+
-<br>|   200 | Karthika |  29000 |
-<br>|   213 | Manacy   |  16250 |
-<br>+-------+----------+--------+
-<br>2 rows in set (0.00 sec)
+<img width="286" alt="Screenshot 2023-09-02 at 12 53 46 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/aae14896-c1b3-4d7f-8b67-4ecea7ea1885">
 
 ##### 10.Return EMPNO, NAME and SALARY of all male managers ordered by NAME.
 SELECT Empno, Name, Salary
@@ -94,11 +70,4 @@ SELECT Empno, Name, Salary
 <br>WHERE Sex = 'M' AND Job = 'MNGR'
 <br>ORDER BY Name;
 
-<br>+-------+--------+--------+
-<br>| Empno | Name   | Salary |
-<br>+-------+--------+--------+
-<br>|   109 | Alan   |  30000 |
-<br>|   105 | Watson |  45000 |
-<br>+-------+--------+--------+
-<br>2 rows in set (0.00 sec)
-
+<img width="283" alt="Screenshot 2023-09-02 at 12 54 14 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/57fb61a9-c1ef-40a2-b2e6-42d6f7cade73">
