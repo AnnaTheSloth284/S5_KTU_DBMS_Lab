@@ -1,4 +1,4 @@
-### Queries
+<img width="428" alt="Screenshot 2023-09-02 at 1 10 49 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/2124b93c-d176-4568-be09-006b7170f85f">### Queries
 ##### 1. Return details of all managers from employee table sorted alphabetically by name.
 SELECT *
 <br>FROM Employee
@@ -112,14 +112,7 @@ SELECT *
 <br>FROM Employee
 <br>WHERE Comm IS NOT NULL AND Comm <> 0;
 
-<br>+-------+--------+------+--------+------+--------+------+
-<br>| Empno | Name   | Job  | Salary | Comm | Dep_No | Sex  |
-<br>+-------+--------+------+--------+------+--------+------+
-<br>|   101 | Smitha | SLSM |  25000 | 3000 |     40 | F    |
-<br>|   109 | Alan   | MNGR |  30000 | 8000 |     40 | M    |
-<br>|   220 | Soosan | SLSM |  28500 | 5300 |     60 | F    |
-<br>+-------+--------+------+--------+------+--------+------+
-<br>3 rows in set (0.01 sec)
+<img width="428" alt="Screenshot 2023-09-02 at 1 10 49 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/a028e368-7b05-4754-a079-cc13011d214c">
 
 ##### 17. Find EMPNO ,NAME and JOB of all females who are not managers.
 SELECT Empno, Name, Job
