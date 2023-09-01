@@ -12,5 +12,5 @@ Table design:
 
 
 <br><br>SUPPLIER (s_no notnull varchar(10), sname notnullvarchar(15), age notnull int,city notnull varchar(15), primarykey sno)
-<img width="379" alt="Screenshot 2023-09-01 at 5 26 16 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/792c780d-bf72-4fca-8e00-5c18993fb224">
+<br><img width="379" alt="Screenshot 2023-09-01 at 5 26 16 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/792c780d-bf72-4fca-8e00-5c18993fb224">
 
