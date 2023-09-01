@@ -25,17 +25,7 @@
 <br>       ('C005', 'Ravi Sreedharan', 25, 'Delhi'),
 <br>       ('C006', 'Nanda Gopal', 25, 'Madras');
 
-<br>select * from supplier;
-<br>+------+-----------------+-----+--------+
-<br>| S_NO | SNAME           | AGE | CITY   |
-<br>+------+-----------------+-----+--------+
-<br>| C003 | Susmitha        |  55 | Bombay |
-<br>| C004 | Basu Navindgi   |  45 | Bombay |
-<br>| C005 | Ravi Sreedharan |  25 | Delhi  |
-<br>| C006 | Nanda Gopal     |  25 | Madras |
-<br>| S001 | Ivan Bayross    |  35 | Bombay |
-<br>| S002 | Nirmala Agarwal |  35 | Madras |
-<br>+------+-----------------+-----+--------+
+<img width="299" alt="Screenshot 2023-09-01 at 5 40 53 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/bdc5fbcd-3035-4177-8fa4-d212f6f0f837">
 
 <br>INSERT INTO PURCHASE(ORDER_NO, CUSTNO, PRODNO, QUANTITY, ORDERDATE)
 <br>VALUES (‘O00001’, ‘C00002’, ‘P00003’, 2, ‘2016-01-20’),
