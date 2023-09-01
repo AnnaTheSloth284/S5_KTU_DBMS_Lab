@@ -164,18 +164,18 @@ DELETE FROM PRODUCT
 <br>SELECT a.NAME, b.SNAME
 <br>FROM
 <br>(
-<br>    SELECT DISTINCT NAME AS NAME1
-<br>    FROM CUSTOMER
-<br>    UNION ALL
-<br>    SELECT DISTINCT SNAME AS NAME2
-<br>    FROM SUPPLIER
+<br>SELECT DISTINCT NAME AS NAME1
+<br>FROM CUSTOMER
+<br>UNION ALL
+<br>SELECT DISTINCT SNAME AS NAME2
+<br>FROM SUPPLIER
 <br>) x
 <br>LEFT JOIN
 <br>CUSTOMER a ON x.NAME1 = a.NAME
-<br>LEFT JOIN
-<br>SUPPLIER b ON x.NAME2 = b.SNAME;
+<br>JOIN
+<br>SUPPLIER b ON b.SNAME = a.NAME;
 
-
+<img width="280" alt="Screenshot 2023-09-01 at 10 33 53 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/808cf4a7-fa38-4580-be1a-61b2a1cdab5e">
 
 ##### 26.Retrieve customer names starting with ‘R’.<br>
 <br>SELECT NAME FROM CUSTOMER
