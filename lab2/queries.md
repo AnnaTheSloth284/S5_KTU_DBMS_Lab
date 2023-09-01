@@ -233,15 +233,4 @@ SELECT E.Name AS "Employee Name", D.Dep_Name AS "Department Name"
 <br>)
 <br>ORDER BY D.Dep_Name, E.Name;
 
-<br>+---------------+-----------------+
-<br>| Employee Name | Department Name |
-<br>+---------------+-----------------+
-<br>| Karthika      | Accounting      |
-<br>| Manacy        | Accounting      |
-<br>| Wilson        | Accounting      |
-<br>| Deepa         | Shipping        |
-<br>| Simpson       | Shipping        |
-<br>| Soosan        | Shipping        |
-<br>+---------------+-----------------+
-<br>6 rows in set (0.00 sec)
-
+<img width="519" alt="Screenshot 2023-09-02 at 1 37 25 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/c1746f21-e3f4-46f2-ae2f-f233494fad13">
