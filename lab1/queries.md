@@ -120,7 +120,16 @@ DELETE FROM PRODUCT
 <img width="258" alt="Screenshot 2023-09-01 at 6 34 52 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/0d8761e3-1be0-417b-9fe2-c2df2b587ea0">
 
 ##### 21.Copy the contents of field order_no and orderdate of purchase table into new table.<br>
-<br>SELECT ORDER_NO, ORDERDATE INTO ORDER FROM PURCHASE;
+<br>CREATE TABLE ORDERD (
+<br>  ORDER_NO VARCHAR(15),
+<br>  ORDERDATE VARCHAR(15)
+<br>);
+
+<br>INSERT INTO ORDERD (ORDER_NO, ORDERDATE)
+<br>SELECT ORDER_NO, ORDERDATE
+<br>FROM PURCHASE;
+
+<img width="519" alt="Screenshot 2023-09-01 at 9 47 07 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/9f132673-3431-499f-8707-6b2c309d6d84">
 
 ##### 22.Delete the newly created table.<br>
 <br>DROP TABLE ORDER;
