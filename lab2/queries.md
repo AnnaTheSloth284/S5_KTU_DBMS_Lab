@@ -168,12 +168,7 @@ SELECT D.Loc AS "Company Location"
 <br>JOIN Department D ON E.Dep_No = D.Dep_No
 <br>WHERE E.Name = 'Watson';
 
-<br>+------------------+
-<br>| Company Location |
-<br>+------------------+
-<br>| Cochin           |
-<br>+------------------+
-<br>1 row in set (0.00 sec)
+<img width="342" alt="Screenshot 2023-09-02 at 1 29 55 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/2d6c13ae-62ac-43c0-9525-9e9077bdcbf1">
 
 ##### 24.Find name, EMPNO,DEP-NAME for all employee who work in ‘Trichur’ and order by EMPNO in descending order
 SELECT E.Name, E.Empno, D.Dep_Name AS "DEP-NAME"
@@ -182,13 +177,7 @@ SELECT E.Name, E.Empno, D.Dep_Name AS "DEP-NAME"
 <br>WHERE D.Loc = 'Trichur'
 <br>ORDER BY E.Empno DESC;
 
-<br>+--------+-------+----------+
-<br>| Name   | Empno | DEP-NAME |
-<br>+--------+-------+----------+
-<br>| Alan   |   109 | Sales    |
-<br>| Smitha |   101 | Sales    |
-<br>+--------+-------+----------+
-<br>2 rows in set (0.00 sec)
+<img width="399" alt="Screenshot 2023-09-02 at 1 30 28 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/45331452-5fc1-4603-8595-e46d5b983490">
 
 ##### 25.Retrieve NAME and SALARY of all employee who earned more than average salary.
 SELECT Name, Salary
