@@ -119,7 +119,7 @@ SELECT Empno, Name, Job
 <br>FROM Employee
 <br>WHERE Sex = 'F' AND Job <> 'MNGR';
 
-<img width="428" alt="Screenshot 2023-09-02 at 1 10 49 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/bb1ce4db-0762-48a2-a193-986ef20a9dbd">
+
 
 
 ##### 18.Find EMPNO,NAME and SALARY of all employees who earn more than 10000 but less than 40000.
@@ -127,21 +127,7 @@ SELECT Empno, Name, Salary
 <br>FROM Employee
 <br>WHERE Salary > 10000 AND Salary < 40000;
 
-<br>+-------+----------+--------+
-<br>| Empno | Name     | Salary |
-<br>+-------+----------+--------+
-<br>|   100 | Wilson   |  17000 |
-<br>|   101 | Smitha   |  25000 |
-<br>|   103 | Roy      |  35000 |
-<br>|   109 | Alan     |  30000 |
-<br>|   110 | Tina     |  18000 |
-<br>|   200 | Karthika |  29000 |
-<br>|   210 | Rita     |  36500 |
-<br>|   213 | Manacy   |  16250 |
-<br>|   215 | Deepa    |  27000 |
-<br>|   220 | Soosan   |  28500 |
-<br>+-------+----------+--------+
-<br>10 rows in set (0.01 sec)
+<img width="428" alt="Screenshot 2023-09-02 at 1 10 49 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/bb1ce4db-0762-48a2-a193-986ef20a9dbd">
 
 ##### 19.Use lN operator to find NAME and EMPNO of EMPLOYEE who are analyst or manager ordered by NAME.
 SELECT Name, Empno
