@@ -70,6 +70,8 @@ UPDATE PURCHASE
 <br>SET PRODNO='P00008'
 <br>WHERE CUSTNO='C00003'; 
 
+<img width="296" alt="Screenshot 2023-09-01 at 6 17 12 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/487cc0f0-9d52-4ab7-b922-576e6fa90bd1">
+
 ##### 13. Find the number of customers from city Delhi.<br>
 SELECT COUNT(CUST_NO) FROM CUSTOMER
 <br>WHERE CITY='Delhi';
