@@ -16,9 +16,13 @@ SELECT CUSTNO FROM PURCHASE
 SELECT COMPANY FROM PRODUCT
 <br>WHERE PRICE>5000;
 
+<img width="251" alt="Screenshot 2023-09-01 at 5 57 26 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/3ae9d6c2-b54d-4a9b-833a-79ecd02e12bb">
+
 ##### 4. List all the customers whose name is not beginning with ‘r’?<br>
 SELECT * FROM CUSTOMER
 <br>WHERE NAME NOT LIKE 'r%';
+
+<img width="487" alt="Screenshot 2023-09-01 at 5 57 58 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/12e5d621-e89e-4aa9-92a2-297fa5472af9">
 
 ##### 5. Add email field into the customer table?<br>
 ALTER TABLE CUSTOMER
