@@ -38,7 +38,7 @@ SELECT MAX(Comm) AS Max_Comm, MIN(Comm) AS Min_Comm, SUM(Comm) AS Total_Comm, CO
 <img width="597" alt="Screenshot 2023-09-02 at 12 49 46 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/b50f3dcf-a73f-4984-bd03-d39867efa1a5">
 
 ##### 6. Number of employees listed in each job.
-<br>SELECT Job, COUNT(*) AS Num_Employees
+SELECT Job, COUNT(*) AS Num_Employees
 <br>FROM Employee
 <br>GROUP BY Job;
 
@@ -101,7 +101,7 @@ SELECT *
 <img width="396" alt="Screenshot 2023-09-02 at 1 01 47 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/dcd110f5-1d3c-4ba8-9e41-b88f3bf914cd">
 
 ##### 15. Find names of employees containing letters U and E.
-<br>SELECT Name
+SELECT Name
 <br>FROM Employee
 <br>WHERE Name LIKE '%U%' AND Name LIKE '%E%';
 
