@@ -82,11 +82,13 @@ SELECT COUNT(CUST_NO) FROM CUSTOMER
 SELECT CUSTNO FROM PURCHASE
 <br>WHERE QUANTITY>3;
 
-
+<img width="252" alt="Screenshot 2023-09-01 at 6 24 34 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/34e2d4a1-f3b5-40b2-96af-4ece954461e1">
 
 ##### 15.Modify the structure of order date field in the purchase into character.<br>
 ALTER TABLE PURCHASE
 <br>ALTER  ORDERDATE VARCHAR(10);
+
+<img width="270" alt="Screenshot 2023-09-01 at 6 28 10 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/fa840c58-e560-4302-83a8-ce432a775595">
 
 ##### 16.Find min and max price from product table.<br>
 SELECT MIN(PRICE ),  MAX(PRICE) FROM PRODUCT;
