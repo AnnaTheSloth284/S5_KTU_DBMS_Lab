@@ -150,6 +150,7 @@ DELETE FROM PRODUCT
 <img width="436" alt="Screenshot 2023-09-01 at 9 51 26 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/0c92885b-4dc5-46c1-96ce-24bd0795f641">
 
 ##### 25.Retrieve transaction details of customer who lives in same city, obtain the result through self -join and correlated join.<br>
+###### Self Join
 <br>SELECT CSTMR.NAME, SPLR.SNAME
 <br>FROM
 <br>   (SELECT DISTINCT NAME FROM CUSTOMER) CSTMR
@@ -157,6 +158,9 @@ DELETE FROM PRODUCT
 <br>   (SELECT DISTINCT SNAME FROM SUPPLIER) SPLR
 <br>              ON CSTMR.NAME = SPLR.SNAME;
 
+<img width="354" alt="Screenshot 2023-09-01 at 9 56 15 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/90c14597-7f04-4379-ae0b-f4136de9ac30">
+
+###### Correlated Join
 <br>SELECT a.NAME, b.SNAME
 <br>FROM
 <br>(
