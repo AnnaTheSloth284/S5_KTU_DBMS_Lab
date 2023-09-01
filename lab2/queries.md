@@ -71,3 +71,150 @@ SELECT Empno, Name, Salary
 <br>ORDER BY Name;
 
 <img width="283" alt="Screenshot 2023-09-02 at 12 54 14 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/57fb61a9-c1ef-40a2-b2e6-42d6f7cade73">
+
+##### 11.Return NAME and JOB of all female sales man and managers.
+<br>SELECT Name, Job
+<br>FROM Employee
+<br>WHERE Sex = 'F' AND (Job = 'SLSM' OR Job = 'MNGR');
+
+<br>+----------+------+
+<br>| Name     | Job  |
+<br>+----------+------+
+<br>| Smitha   | SLSM |
+<br>| Karthika | MNGR |
+<br>| Rita     | MNGR |
+<br>| Soosan   | SLSM |
+<br>+----------+------+
+<br>4 rows in set (0.00 sec)
+
+##### 12.Display EMPNO and NAME of employees in employee table who are a either manager or
+<br>a clerk in department 50.
+<br>SELECT Empno, Name
+<br>FROM Employee
+<br>WHERE (Job = 'MNGR' OR Job = 'CLRK') AND Dep_No = 50;
+
+<br>+-------+------+
+<br>| Empno | Name |
+<br>+-------+------+
+<br>|   110 | Tina |
+<br>|   210 | Rita |
+<br>+-------+------+
+<br>2 rows in set (0.00 sec)
+
+##### 13.List the name of employee who are neither a clerk nor a salesman.
+<br>SELECT Name
+<br>FROM Employee
+<br>WHERE Job NOT IN ('CLRK', 'SLSM');
+<br>+----------+
+<br>| Name     |
+<br>+----------+
+<br>| Roy      |
+<br>| Watson   |
+<br>| Alan     |
+<br>| Karthika |
+<br>| Rita     |
+<br>| Simpson  |
+<br>| Deepa    |
+<br>+----------+
+<br>7 rows in set (0.00 sec)
+
+
+##### 14.Return details of all clerks working in departments other than department 10.
+<br>SELECT *
+<br>FROM Employee
+<br>WHERE Job = 'CLRK' AND Dep_No <> 10;
+
+<br>+-------+------+------+--------+------+--------+------+
+<br>| Empno | Name | Job  | Salary | Comm | Dep_No | Sex  |
+<br>+-------+------+------+--------+------+--------+------+
+<br>|   110 | Tina | CLRK |  18000 | NULL |     50 | F    |
+<br>+-------+------+------+--------+------+--------+------+
+<br>1 row in set (0.00 sec)
+
+##### 15. Find names of employees containing letters U and E.
+<br>SELECT Name
+<br>FROM Employee
+<br>WHERE Name LIKE '%U%' AND Name LIKE '%E%';
+
+<br>Empty set (0.00 sec)
+
+##### 16.List all employee who earned commission.
+<br>SELECT *
+<br>FROM Employee
+<br>WHERE Comm IS NOT NULL AND Comm <> 0;
+
+<br>+-------+--------+------+--------+------+--------+------+
+<br>| Empno | Name   | Job  | Salary | Comm | Dep_No | Sex  |
+<br>+-------+--------+------+--------+------+--------+------+
+<br>|   101 | Smitha | SLSM |  25000 | 3000 |     40 | F    |
+<br>|   109 | Alan   | MNGR |  30000 | 8000 |     40 | M    |
+<br>|   220 | Soosan | SLSM |  28500 | 5300 |     60 | F    |
+<br>+-------+--------+------+--------+------+--------+------+
+<br>3 rows in set (0.01 sec)
+
+##### 17. Find EMPNO ,NAME and JOB of all females who are not managers.
+<br>SELECT Empno, Name, Job
+<br>FROM Employee
+<br>WHERE Sex = 'F' AND Job <> 'MNGR';
+
+<br>+-------+--------+-------+
+<br>| Empno | Name   | Job   |
+<br>+-------+--------+-------+
+<br>|   101 | Smitha | SLSM  |
+<br>|   110 | Tina   | CLRK  |
+<br>|   213 | Manacy | CLRK  |
+<br>|   215 | Deepa  | ANLST |
+<br>|   220 | Soosan | SLSM  |
+<br>+-------+--------+-------+
+<br>5 rows in set (0.00 sec)
+
+##### 18.Find EMPNO,NAME and SALARY of all employees who earn more than 10000 but less than 40000.
+<br>SELECT Empno, Name, Salary
+<br>FROM Employee
+<br>WHERE Salary > 10000 AND Salary < 40000;
+
+<br>+-------+----------+--------+
+<br>| Empno | Name     | Salary |
+<br>+-------+----------+--------+
+<br>|   100 | Wilson   |  17000 |
+<br>|   101 | Smitha   |  25000 |
+<br>|   103 | Roy      |  35000 |
+<br>|   109 | Alan     |  30000 |
+<br>|   110 | Tina     |  18000 |
+<br>|   200 | Karthika |  29000 |
+<br>|   210 | Rita     |  36500 |
+<br>|   213 | Manacy   |  16250 |
+<br>|   215 | Deepa    |  27000 |
+<br>|   220 | Soosan   |  28500 |
+<br>+-------+----------+--------+
+<br>10 rows in set (0.01 sec)
+
+##### 19.Use lN operator to find NAME and EMPNO of EMPLOYEE who are analyst or manager
+<br>ordered by NAME.
+<br>SELECT Name, Empno
+<br>FROM Employee
+<br>WHERE Job IN ('ANALYST', 'MNGR')
+<br>ORDER BY Name;
+
+<br>+----------+-------+
+<br>| Name     | Empno |
+<br>+----------+-------+
+<br>| Alan     |   109 |
+<br>| Karthika |   200 |
+<br>| Rita     |   210 |
+<br>| Watson   |   105 |
+<br>+----------+-------+
+<br>4 rows in set (0.00 sec)
+
+##### 20.Find the employee number, name and salary who been paid commission and whose salary
+<br>is greater than 30000 .
+<br>SELECT Empno, Name, Salary
+<br>FROM Employee
+<br>WHERE Comm IS NOT NULL AND Salary > 30000;
+
+<br>+-------+--------+--------+
+<br>| Empno | Name   | Salary |
+<br>+-------+--------+--------+
+<br>|   105 | Watson |  45000 |
+<br>+-------+--------+--------+
+<br>1 row in set (0.00 sec)
