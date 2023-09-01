@@ -8,7 +8,9 @@ SELECT * FROM CUSTOMER
 
 ##### 2. List all customer- numbers of all who purchase the product in the month of January<br>
 SELECT CUSTNO FROM PURCHASE
-<br>WHERE ORDERDATE LIKE '___01%';
+<br>WHERE ORDERDATE LIKE '%__01%';
+
+<img width="270" alt="Screenshot 2023-09-01 at 5 54 59 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/cfb74019-6cae-4339-bbe3-b07d5a08f2c9">
 
 ##### 3. List all the name of company whose price is greater than 5000?<br>
 SELECT COMPANY FROM PRODUCT
