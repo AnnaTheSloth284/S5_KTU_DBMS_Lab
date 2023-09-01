@@ -10,4 +10,5 @@ create table CUSTOMER(CUST_NO VARCHAR(15) NOT NULL PRIMARY KEY, NAME VARCHAR(15)
 <br>create table SUPPLIER(S_NO varchar(10) not null primary key, SNAME varchar(15) not null, AGE int not null , CITY
 varchar(15) not null);
 
+
 <br>create table PURCHASE (ORDER_NO varchar(15) not null primary key, CUSTNO varchar(15) not null, PRODNO varchar(15) not null,QUANTITY int not null , ORDERDATE date, foreign key(CUSTNO) references CUSTOMER(CUST_NO) on delete cascade, foreign key(PRODNO) references PRODUCT(PRODUCT_NO) on delete cascade);
