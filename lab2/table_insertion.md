@@ -1,6 +1,6 @@
 ### Table Insertions
 #### table Department
-<br>INSERT INTO Department (Dep_No, Dep_Name, Loc, Mgr, Exp_Bdg, Rev_Bdg)
+INSERT INTO Department (Dep_No, Dep_Name, Loc, Mgr, Exp_Bdg, Rev_Bdg)
 <br>VALUES
 <br>    (60, 'Shipping', 'Trivandrum', 215, 90000, 0),
 <br>    (10, 'Accounting', 'Cochin', 200, 100000, 0),
@@ -11,7 +11,7 @@
 <img width="465" alt="Screenshot 2023-09-02 at 12 18 42 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/9e1d31ad-2273-44a4-9e4d-5afab7e989da">
 
 #### table Employee
-<br>INSERT INTO Employee (Empno, Name, Job, Salary, Dep_No, Sex)
+INSERT INTO Employee (Empno, Name, Job, Salary, Dep_No, Sex)
 <br>VALUES
 <br>    (100, 'Wilson', 'CLRK', 17000, 10, 'M'),
 <br>    (101, 'Smitha', 'SLSM', 25000, 40, 'F'),
@@ -45,20 +45,11 @@
 <img width="427" alt="Screenshot 2023-09-02 at 12 20 20 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/75eb9f39-923e-41b4-97b9-a92aa352b7bd">
 
 #### table Dependant
-<br>INSERT INTO Dependant (Pid, Fname, Lname, Place, Empno)
+INSERT INTO Dependant (Pid, Fname, Lname, Place, Empno)
 <br>VALUES
 <br>    (1010, 'Anu', 'Jose', 'Trivandrum', 214),
 <br>    (1020, 'Neenu', 'Thomas', 'Kollam', 200),
 <br>    (1022, 'Anamika', 'Thampi', 'Kollam', 200),
 <br>    (1031, 'Swetha', 'Das', 'Kottayam', 109);
 
-<br>select * from Dependant;
-<br>+------+---------+--------+------------+-------+
-<br>| Pid  | Fname   | Lname  | Place      | Empno |
-<br>+------+---------+--------+------------+-------+
-<br>| 1010 | Anu     | Jose   | Trivandrum |   214 |
-<br>| 1020 | Neenu   | Thomas | Kollam     |   200 |
-<br>| 1022 | Anamika | Thampi | Kollam     |   200 |
-<br>| 1031 | Swetha  | Das    | Kottayam   |   109 |
-<br>+------+---------+--------+------------+-------+
-<br>4 rows in set (0.01 sec)
+<img width="347" alt="Screenshot 2023-09-02 at 12 23 04 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/98ecc116-68dd-4d23-aa3d-0a4f7fc54ace">
