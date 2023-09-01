@@ -1,6 +1,6 @@
-<br>QUESTIONS
-<br>1. Return details of all managers from employee table sorted alphabetically by name.
-<br>SELECT *
+### Queries
+##### 1. Return details of all managers from employee table sorted alphabetically by name.
+SELECT *
 <br>FROM Employee
 <br>WHERE Dep_No = 40
 <br>ORDER BY Empno;
@@ -13,7 +13,7 @@
 <br>+-------+--------+------+--------+------+--------+------+
 <br>2 rows in set (0.00 sec)
 
-<br>2. Return details of all employees in department 40 ordered by EMPNO.
+##### 2. Return details of all employees in department 40 ordered by EMPNO.
 <br>SELECT *
 <br>FROM Employee
 <br>WHERE Sex = 'F'
@@ -32,7 +32,7 @@
 <br>+-------+----------+-------+--------+------+--------+------+
 <br>7 rows in set (0.00 sec)
 
-<br>3. Return information about all female employee ordered by NAME.
+##### 3. Return information about all female employee ordered by NAME.
 <br>SELECT *
 <br>FROM Employee
 <br>WHERE Sex = 'F'
@@ -51,7 +51,7 @@
 <br>+-------+----------+-------+--------+------+--------+------+
 <br>7 rows in set (0.00 sec)
 
-<br>4. Find Minimum, Maximum and Average salary of employees in each department.
+##### 4. Find Minimum, Maximum and Average salary of employees in each department.
 <br>SELECT Dep_No, MIN(Salary) AS Min_Salary, MAX(Salary) AS Max_Salary, AVG(Salary) AS Avg_Salary
 <br>FROM Employee
 <br>GROUP BY Dep_No;
@@ -67,7 +67,7 @@
 <br>+--------+------------+------------+------------+
 <br>5 rows in set (0.00 sec)
 
-<br>5. Find Maximum and Minimum commission paid(COMM),total commission paid and count of employees who were paid with commission.
+##### 5. Find Maximum and Minimum commission paid(COMM),total commission paid and count of employees who were paid with commission.
 <br>SELECT MAX(Comm) AS Max_Comm, MIN(Comm) AS Min_Comm, SUM(Comm) AS Total_Comm, COUNT(*) AS Count_With_Comm
 <br>FROM Employee
 <br>WHERE Comm IS NOT NULL;
@@ -79,7 +79,7 @@
 <br>+----------+----------+------------+-----------------+
 <br>1 row in set (0.00 sec)
 
-<br>6. Number of employees listed in each job.
+##### 6. Number of employees listed in each job.
 <br>SELECT Job, COUNT(*) AS Num_Employees
 <br>FROM Employee
 <br>GROUP BY Job;
@@ -95,7 +95,7 @@
 <br>+-------+---------------+
 <br>5 rows in set (0.01 sec)
 
-<br>7. Total salary paid to each job in the category.
+##### 7. Total salary paid to each job in the category.
 <br>SELECT Job, SUM(Salary) AS Total_Salary
 <br>FROM Employee
 <br>GROUP BY Job;
@@ -111,7 +111,7 @@
 <br>+-------+--------------+
 <br>5 rows in set (0.00 sec)
 
-<br>8. Return all DEPT_ÑOs in employee table(Ensure that each DEPT_ÑO appears only once).
+##### 8. Return all DEPT_ÑOs in employee table(Ensure that each DEPT_ÑO appears only once).
 <br>SELECT DISTINCT Dep_No
 <br>FROM Employee;
 
@@ -126,7 +126,7 @@
 <br>+--------+
 <br>5 rows in set (0.00 sec)
 
-<br>9. Return EMPNO,NAME and SALARY of females in department 10.
+##### 9. Return EMPNO,NAME and SALARY of females in department 10.
 <br>SELECT Empno, Name, Salary
 <br>FROM Employee
 <br>WHERE Sex = 'F' AND Dep_No = 10;
@@ -139,7 +139,7 @@
 <br>+-------+----------+--------+
 <br>2 rows in set (0.00 sec)
 
-<br>10.Return EMPNO, NAME and SALARY of all male managers ordered by NAME.
+##### 10.Return EMPNO, NAME and SALARY of all male managers ordered by NAME.
 <br>SELECT Empno, Name, Salary
 <br>FROM Employee
 <br>WHERE Sex = 'M' AND Job = 'MNGR'
