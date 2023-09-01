@@ -145,4 +145,177 @@ SELECT Empno, Name, Salary
 
 <img width="212" alt="Screenshot 2023-09-02 at 1 20 34 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/2de44aa5-2273-47d4-90bd-1f3ef23688b0">
 
-##### 
+##### 21.Find DEP-NO ,DEP-NAME, SALARY, JOB, SEX ordered by EMPNO within Department
+SELECT D.Dep_No AS "DEP-NO", D.Dep_Name AS "DEP-NAME", E.Salary, E.Job, E.Sex
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>ORDER BY D.Dep_No, E.Empno;
+
+<br>+--------+---------------+--------+-------+------+
+<br>| DEP-NO | DEP-NAME      | Salary | Job   | Sex  |
+<br>+--------+---------------+--------+-------+------+
+<br>|     10 | Accounting    |  17000 | CLRK  | M    |
+<br>|     10 | Accounting    |  29000 | MNGR  | F    |
+<br>|     10 | Accounting    |  16250 | CLRK  | F    |
+<br>|     30 | Research      |  35000 | ANLST | M    |
+<br>|     30 | Research      |  45000 | MNGR  | M    |
+<br>|     40 | Sales         |  25000 | SLSM  | F    |
+<br>|     40 | Sales         |  30000 | MNGR  | M    |
+<br>|     50 | Manufacturing |  18000 | CLRK  | F    |
+<br>|     50 | Manufacturing |  36500 | MNGR  | F    |
+<br>|     60 | Shipping      |   8250 | DRVR  | M    |
+<br>|     60 | Shipping      |  27000 | ANLST | F    |
+<br>|     60 | Shipping      |  28500 | SLSM  | F    |
+<br>+--------+---------------+--------+-------+------+
+<br>12 rows in set (0.00 sec)
+
+##### 22.Display the name of employee and dependant name if dependant is staying in the same location where employee is working .
+SELECT E.Name AS "Employee Name", D.Fname || ' ' || D.Lname AS "Dependant Name"
+<br>FROM Employee E
+<br>JOIN Dependant D ON E.Empno = D.Empno
+<br>JOIN Department Dep ON E.Dep_No = Dep.Dep_No
+<br>WHERE D.Place = Dep.Loc;
+
+<br>+---------------+----------------+
+<br>| Employee Name | Dependant Name |
+<br>+---------------+----------------+
+<br>| Simpson       |              0 |
+<br>+---------------+----------------+
+<br>1 row in set, 4 warnings (0.00 sec)
+
+##### 23.Find company location of employee named Watson.
+SELECT D.Loc AS "Company Location"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Name = 'Watson';
+
+<br>+------------------+
+<br>| Company Location |
+<br>+------------------+
+<br>| Cochin           |
+<br>+------------------+
+<br>1 row in set (0.00 sec)
+
+##### 24.Find name, EMPNO,DEP-NAME for all employee who work in ‘Trichur’ and order by EMPNO in descending order
+<br>SELECT E.Name, E.Empno, D.Dep_Name AS "DEP-NAME"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE D.Loc = 'Trichur'
+<br>ORDER BY E.Empno DESC;
+
+<br>+--------+-------+----------+
+<br>| Name   | Empno | DEP-NAME |
+<br>+--------+-------+----------+
+<br>| Alan   |   109 | Sales    |
+<br>| Smitha |   101 | Sales    |
+<br>+--------+-------+----------+
+<br>2 rows in set (0.00 sec)
+
+##### 25.Retrieve NAME and SALARY of all employee who earned more than average salary.
+SELECT Name, Salary
+<br>FROM Employee
+<br>WHERE Salary > (SELECT AVG(Salary) FROM Employee);
+
+<br>+----------+--------+
+<br>| Name     | Salary |
+<br>+----------+--------+
+<br>| Roy      |  35000 |
+<br>| Watson   |  45000 |
+<br>| Alan     |  30000 |
+<br>| Karthika |  29000 |
+<br>| Rita     |  36500 |
+<br>| Deepa    |  27000 |
+<br>| Soosan   |  28500 |
+<br>+----------+--------+
+<br>7 rows in set (0.00 sec)
+
+##### 26.Find NAME, JOB, DEP NAME, LOCATION of all female employee order by EMPNAME.
+SELECT E.Name, E.Job, D.Dep_Name AS "DEP NAME", D.Loc AS "LOCATION"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Sex = 'F'
+<br>ORDER BY E.Name;
+
+<br>+----------+-------+---------------+------------+
+<br>| Name     | Job   | DEP NAME      | LOCATION   |
+<br>+----------+-------+---------------+------------+
+<br>| Deepa    | ANLST | Shipping      | Trivandrum |
+<br>| Karthika | MNGR  | Accounting    | Cochin     |
+<br>| Manacy   | CLRK  | Accounting    | Cochin     |
+<br>| Rita     | MNGR  | Manufacturing | Kottayam   |
+<br>| Smitha   | SLSM  | Sales         | Trichur    |
+<br>| Soosan   | SLSM  | Shipping      | Trivandrum |
+<br>| Tina     | CLRK  | Manufacturing | Kottayam   |
+<br>+----------+-------+---------------+------------+
+<br>7 rows in set (0.00 sec)
+
+##### 27.Find the EMPNAME,DEP,NAME of all manager order by department name.
+SELECT E.Name AS "EMPNAME", D.Dep_Name AS "DEP-NAME", E.Dep_No AS "DEP-NO"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Job = 'MNGR'
+<br>ORDER BY D.Dep_Name;
+
+<br>+----------+---------------+--------+
+<br>| EMPNAME  | DEP-NAME      | DEP-NO |
+<br>+----------+---------------+--------+
+<br>| Karthika | Accounting    |     10 |
+<br>| Rita     | Manufacturing |     50 |
+<br>| Watson   | Research      |     30 |
+<br>| Alan     | Sales         |     40 |
+<br>+----------+---------------+--------+
+<br>4 rows in set (0.01 sec)
+
+##### 28.Find NAME and DEP-NAME of employee who earns highest salary.
+SELECT E.Name, D.Dep_Name AS "DEP-NAME"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Salary = (SELECT MAX(Salary) FROM Employee);
+
+<br>+--------+----------+
+<br>| Name   | DEP-NAME |
+<br>+--------+----------+
+<br>| Watson | Research |
+<br>+--------+----------+
+<br>1 row in set (0.00 sec)
+
+##### 29.Find name, department name, commission of all employee who paid commission order by Name.
+SELECT E.Name, D.Dep_Name AS "DEP-NAME", E.Comm
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Comm IS NOT NULL AND E.Comm <> 0
+<br>ORDER BY E.Name;
+
+<br>+--------+----------+------+
+<br>| Name   | DEP-NAME | Comm |
+<br>+--------+----------+------+
+<br>| Alan   | Sales    | 8000 |
+<br>| Smitha | Sales    | 3000 |
+<br>| Soosan | Shipping | 5300 |
+<br>+--------+----------+------+
+<br>3 rows in set (0.00 sec)
+
+##### 30.Display employee name and department name of all employees working in departments that has at least three employees. Order the output in alphabetical order first by department name and then by employee name.
+SELECT E.Name AS "Employee Name", D.Dep_Name AS "Department Name"
+<br>FROM Employee E
+<br>JOIN Department D ON E.Dep_No = D.Dep_No
+<br>WHERE E.Dep_No IN (
+<br>    SELECT Dep_No
+<br>    FROM Employee
+<br>    GROUP BY Dep_No
+<br>    HAVING COUNT(*) >= 3
+<br>)
+<br>ORDER BY D.Dep_Name, E.Name;
+
+<br>+---------------+-----------------+
+<br>| Employee Name | Department Name |
+<br>+---------------+-----------------+
+<br>| Karthika      | Accounting      |
+<br>| Manacy        | Accounting      |
+<br>| Wilson        | Accounting      |
+<br>| Deepa         | Shipping        |
+<br>| Simpson       | Shipping        |
+<br>| Soosan        | Shipping        |
+<br>+---------------+-----------------+
+<br>6 rows in set (0.00 sec)
+
