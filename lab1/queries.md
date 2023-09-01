@@ -177,9 +177,11 @@ DELETE FROM PRODUCT
 
 <img width="280" alt="Screenshot 2023-09-01 at 10 33 53 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/808cf4a7-fa38-4580-be1a-61b2a1cdab5e">
 
-##### 26.Retrieve customer names starting with ‘R’.<br>
+##### 26. Retrieve customer names starting with ‘R’.<br>
 <br>SELECT NAME FROM CUSTOMER
 <br>WHERE NAME LIKE 'R%';
+
+<img width="239" alt="Screenshot 2023-09-01 at 10 39 51 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/93d6f276-d330-40f1-8434-93d691f47ba5">
 
 ##### 27.List names of persons who are either a supplier or a customer.<br>
 <br>SELECT CSTMR.NAME, SPLR.SNAME
@@ -189,12 +191,4 @@ DELETE FROM PRODUCT
 <br>   (SELECT DISTINCT SNAME FROM SUPPLIER) SPLR
 <br>              ON CSTMR.NAME = SPLR.SNAME;
 
-<br>+-----------------+-----------------+
-<br>| NAME            | SNAME           |
-<br>+-----------------+-----------------+
-<br>| Ivan Bayross    | Ivan Bayross    |
-<br>| Basu Navindgi   | Basu Navindgi   |
-<br>| Ravi Sreedharan | Ravi Sreedharan |
-<br>+-----------------+-----------------+
-<br>3 rows in set (0.00 sec)
-
+<img width="358" alt="Screenshot 2023-09-01 at 10 40 23 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/3618ba79-a8ad-4256-bc16-97bcc7c64ce2">
