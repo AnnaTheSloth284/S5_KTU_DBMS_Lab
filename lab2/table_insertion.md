@@ -1,5 +1,6 @@
 ### Table Insertions
-INSERT INTO Department (Dep_No, Dep_Name, Loc, Mgr, Exp_Bdg, Rev_Bdg)
+#### table Department
+<br>INSERT INTO Department (Dep_No, Dep_Name, Loc, Mgr, Exp_Bdg, Rev_Bdg)
 <br>VALUES
 <br>    (60, 'Shipping', 'Trivandrum', 215, 90000, 0),
 <br>    (10, 'Accounting', 'Cochin', 200, 100000, 0),
@@ -9,6 +10,7 @@ INSERT INTO Department (Dep_No, Dep_Name, Loc, Mgr, Exp_Bdg, Rev_Bdg)
 
 <img width="465" alt="Screenshot 2023-09-02 at 12 18 42 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/9e1d31ad-2273-44a4-9e4d-5afab7e989da">
 
+#### table Employee
 <br>INSERT INTO Employee (Empno, Name, Job, Salary, Dep_No, Sex)
 <br>VALUES
 <br>    (100, 'Wilson', 'CLRK', 17000, 10, 'M'),
@@ -23,8 +25,6 @@ INSERT INTO Department (Dep_No, Dep_Name, Loc, Mgr, Exp_Bdg, Rev_Bdg)
 <br>    (214, 'Simpson', 'DRVR', 8250, 60, 'M'),
 <br>    (215, 'Deepa', 'ANLST', 27000, 60, 'F'),
 <br>    (220, 'Soosan', 'SLSM', 28500, 60, 'F');
-
-<img width="427" alt="Screenshot 2023-09-02 at 12 20 20 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/75eb9f39-923e-41b4-97b9-a92aa352b7bd">
 
 <br>UPDATE Employee
 <br>SET Comm = 3000
@@ -42,25 +42,9 @@ INSERT INTO Department (Dep_No, Dep_Name, Loc, Mgr, Exp_Bdg, Rev_Bdg)
 <br>SET Comm = 5300
 <br>WHERE Empno = 220;
 
-<br>select * from Employee;
-<br>+-------+----------+-------+--------+------+--------+------+
-<br>| Empno | Name     | Job   | Salary | Comm | Dep_No | Sex  |
-<br>+-------+----------+-------+--------+------+--------+------+
-<br>|   100 | Wilson   | CLRK  |  17000 | NULL |     10 | M    |
-<br>|   101 | Smitha   | SLSM  |  25000 | 3000 |     40 | F    |
-<br>|   103 | Roy      | ANLST |  35000 | NULL |     30 | M    |
-<br>|   105 | Watson   | MNGR  |  45000 | 0    |     30 | M    |
-<br>|   109 | Alan     | MNGR  |  30000 | 8000 |     40 | M    |
-<br>|   110 | Tina     | CLRK  |  18000 | NULL |     50 | F    |
-<br>|   200 | Karthika | MNGR  |  29000 | NULL |     10 | F    |
-<br>|   210 | Rita     | MNGR  |  36500 | NULL |     50 | F    |
-<br>|   213 | Manacy   | CLRK  |  16250 | NULL |     10 | F    |
-<br>|   214 | Simpson  | DRVR  |   8250 | NULL |     60 | M    |
-<br>|   215 | Deepa    | ANLST |  27000 | NULL |     60 | F    |
-<br>|   220 | Soosan   | SLSM  |  28500 | 5300 |     60 | F    |
-<br>+-------+----------+-------+--------+------+--------+------+
-<br>12 rows in set (0.00 sec)
+<img width="427" alt="Screenshot 2023-09-02 at 12 20 20 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/75eb9f39-923e-41b4-97b9-a92aa352b7bd">
 
+#### table Dependant
 <br>INSERT INTO Dependant (Pid, Fname, Lname, Place, Empno)
 <br>VALUES
 <br>    (1010, 'Anu', 'Jose', 'Trivandrum', 214),
