@@ -13,7 +13,7 @@ SELECT *
 <br>WHERE Sex = 'F'
 <br>ORDER BY Name;
 
-![Uploading Screenshot 2023-09-02 at 12.45.45 AM.png…]()
+<img width="440" alt="Screenshot 2023-09-02 at 12 45 45 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/83636ecd-e2b0-48d3-abef-40f866af9979">
 
 ##### 3. Return information about all female employee ordered by NAME.
 SELECT *
