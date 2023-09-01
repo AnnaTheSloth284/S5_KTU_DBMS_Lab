@@ -28,9 +28,13 @@ SELECT * FROM CUSTOMER
 ALTER TABLE CUSTOMER
 <br>ADD EMAIL VARCHAR(20);
 
+<img width="280" alt="Screenshot 2023-09-01 at 6 00 43 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/8b35069b-774f-464e-88d2-c1d975c70417">
+
 ##### 6. List all the customers whose age is greater than 40 in Maharashtra?<br>
 SELECT * FROM CUSTOMER
 <br>WHERE AGE>40 AND STATE='Maharashtra';
+
+<img width="546" alt="Screenshot 2023-09-01 at 6 01 19 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/fa3951c4-9678-4b87-ad19-e8bf2680d6f1">
 
 ##### 7. Display the company’s name in the increasing order of price?<br>
 SELECT COMPANY FROM PRODUCT
