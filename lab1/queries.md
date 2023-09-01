@@ -93,18 +93,28 @@ ALTER TABLE PURCHASE
 ##### 16.Find min and max price from product table.<br>
 SELECT MIN(PRICE ),  MAX(PRICE) FROM PRODUCT;
 
+<img width="372" alt="Screenshot 2023-09-01 at 6 33 08 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/5124e232-fd50-4838-bc33-1dd0c0164f5a">
+
 ##### 17.Find number of products by Wipro and HCL separately.<br>
 SELECT COUNT(PRODUCT_NO) FROM PRODUCT
 <br>WHERE COMPANY='Wipro';
+
+<img width="321" alt="Screenshot 2023-09-01 at 6 33 36 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/a11030f8-23b7-4e27-a7fb-e44894a8fc36">
 
 ##### 18.List all customers in alphabetical order.<br>
 SELECT NAME FROM CUSTOMER
 <br>ORDER BY NAME ASC;
 
+<img width="240" alt="Screenshot 2023-09-01 at 6 34 04 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/ebd87ef0-ace9-4103-bdec-ffbaf66655cf">
+
 ##### 19.Sort the content of purchase table in descending order of date.<br>
 SELECT * FROM PURCHASE 
 <br>ORDER BY ORDERDATE DESC;
 
+<img width="388" alt="Screenshot 2023-09-01 at 6 34 27 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/b9a0ac14-f9ee-4102-8bd7-e3dcb5ec4df5">
+
 ##### 20.Delete the product with product_no = P00003<br>
 DELETE FROM PRODUCT
 <br>WHERE PRODUCT_NO='P00003';
+
+<img width="258" alt="Screenshot 2023-09-01 at 6 34 52 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/0d8761e3-1be0-417b-9fe2-c2df2b587ea0">
