@@ -1,4 +1,4 @@
-<img width="335" alt="Screenshot 2023-09-02 at 1 13 34 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/cb3fc437-dae8-4ad5-bbfa-85ba6e9804b4"><img width="428" alt="Screenshot 2023-09-02 at 1 10 49 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/2124b93c-d176-4568-be09-006b7170f85f">### Queries
+### Queries
 ##### 1. Return details of all managers from employee table sorted alphabetically by name.
 SELECT *
 <br>FROM Employee
