@@ -51,6 +51,8 @@ SELECT AVG(AGE) FROM CUSTOMER;
 SELECT CITY FROM CUSTOMER 
 <br>WHERE STATE='Maharashtra' OR STATE='Tamil Nadu'; 
 
+<img width="399" alt="Screenshot 2023-09-01 at 6 08 13 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/86b72084-3b0d-42c7-af6b-93920d3fbbe4">
+
 ##### 10. Find average price from table product.<br>
 SELECT AVG(PRICE)
 <br>FROM PRODUCT;
