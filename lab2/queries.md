@@ -176,7 +176,7 @@ SELECT D.Loc AS "Company Location"
 <br>1 row in set (0.00 sec)
 
 ##### 24.Find name, EMPNO,DEP-NAME for all employee who work in ‘Trichur’ and order by EMPNO in descending order
-<br>SELECT E.Name, E.Empno, D.Dep_Name AS "DEP-NAME"
+SELECT E.Name, E.Empno, D.Dep_Name AS "DEP-NAME"
 <br>FROM Employee E
 <br>JOIN Department D ON E.Dep_No = D.Dep_No
 <br>WHERE D.Loc = 'Trichur'
