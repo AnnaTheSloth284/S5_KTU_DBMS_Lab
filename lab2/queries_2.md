@@ -97,36 +97,14 @@ SELECT E.Name, D.Dep_Name AS "Department Name", E.Comm
 <br>WHERE E.Comm IS NULL OR E.Comm = 0
 <br>ORDER BY E.Name;
 
-<br>+----------+-----------------+------+
-<br>| Name     | Department Name | Comm |
-<br>+----------+-----------------+------+
-<br>| Deepa    | Shipping        | NULL |
-<br>| Karthika | Accounting      | NULL |
-<br>| Manacy   | Accounting      | NULL |
-<br>| Rita     | Manufacturing   | NULL |
-<br>| Roy      | Research        | NULL |
-<br>| Simpson  | Shipping        | NULL |
-<br>| Tina     | Manufacturing   | NULL |
-<br>| Watson   | Research        | 0    |
-<br>| Wilson   | Accounting      | NULL |
-<br>+----------+-----------------+------+
-<br>9 rows in set (0.00 sec)
+<img width="443" alt="Screenshot 2023-09-02 at 1 43 06 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/539cfcc9-cd5a-44f2-a94a-a100db968344">
 
 ##### 32.List name and salary of all employee in department number l0 and 30.
 SELECT Name, Salary
 <br>FROM Employee
 <br>WHERE Dep_No IN (10, 30);
 
-<br>+----------+--------+
-<br>| Name     | Salary |
-<br>+----------+--------+
-<br>| Wilson   |  17000 |
-<br>| Karthika |  29000 |
-<br>| Manacy   |  16250 |
-<br>| Roy      |  35000 |
-<br>| Watson   |  45000 |
-<br>+----------+--------+
-<br>5 rows in set (0.00 sec)
+<img width="235" alt="Screenshot 2023-09-02 at 1 43 43 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/8033cfbf-4a1c-4396-b849-3655efcbf383">
 
 ##### 33. List jobs of employees in department 30 which are not done in department 40.
 SELECT DISTINCT Job
