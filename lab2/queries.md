@@ -151,23 +151,7 @@ SELECT D.Dep_No AS "DEP-NO", D.Dep_Name AS "DEP-NAME", E.Salary, E.Job, E.Sex
 <br>JOIN Department D ON E.Dep_No = D.Dep_No
 <br>ORDER BY D.Dep_No, E.Empno;
 
-<br>+--------+---------------+--------+-------+------+
-<br>| DEP-NO | DEP-NAME      | Salary | Job   | Sex  |
-<br>+--------+---------------+--------+-------+------+
-<br>|     10 | Accounting    |  17000 | CLRK  | M    |
-<br>|     10 | Accounting    |  29000 | MNGR  | F    |
-<br>|     10 | Accounting    |  16250 | CLRK  | F    |
-<br>|     30 | Research      |  35000 | ANLST | M    |
-<br>|     30 | Research      |  45000 | MNGR  | M    |
-<br>|     40 | Sales         |  25000 | SLSM  | F    |
-<br>|     40 | Sales         |  30000 | MNGR  | M    |
-<br>|     50 | Manufacturing |  18000 | CLRK  | F    |
-<br>|     50 | Manufacturing |  36500 | MNGR  | F    |
-<br>|     60 | Shipping      |   8250 | DRVR  | M    |
-<br>|     60 | Shipping      |  27000 | ANLST | F    |
-<br>|     60 | Shipping      |  28500 | SLSM  | F    |
-<br>+--------+---------------+--------+-------+------+
-<br>12 rows in set (0.00 sec)
+<img width="600" alt="Screenshot 2023-09-02 at 1 26 08 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/dd78aca3-f5e8-4864-bf8d-d2e244d88a5c">
 
 ##### 22.Display the name of employee and dependant name if dependant is staying in the same location where employee is working .
 SELECT E.Name AS "Employee Name", D.Fname || ' ' || D.Lname AS "Dependant Name"
@@ -176,12 +160,7 @@ SELECT E.Name AS "Employee Name", D.Fname || ' ' || D.Lname AS "Dependant Name"
 <br>JOIN Department Dep ON E.Dep_No = Dep.Dep_No
 <br>WHERE D.Place = Dep.Loc;
 
-<br>+---------------+----------------+
-<br>| Employee Name | Dependant Name |
-<br>+---------------+----------------+
-<br>| Simpson       |              0 |
-<br>+---------------+----------------+
-<br>1 row in set, 4 warnings (0.00 sec)
+<img width="612" alt="Screenshot 2023-09-02 at 1 27 18 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/266f10f1-068e-465d-88bb-167f79ad23a2">
 
 ##### 23.Find company location of employee named Watson.
 SELECT D.Loc AS "Company Location"
