@@ -1,0 +1,1 @@
+Aim : Write queries to create and retrieve department and employee relations using relationship constraints, indices, DDL &DML commands, Views, built in functions, set operations, aggregate functions, grouping and ordering clauses
