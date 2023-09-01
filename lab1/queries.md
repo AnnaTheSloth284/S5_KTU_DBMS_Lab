@@ -56,3 +56,5 @@ SELECT CITY FROM CUSTOMER
 ##### 10. Find average price from table product.<br>
 SELECT AVG(PRICE)
 <br>FROM PRODUCT;
+
+<img width="188" alt="Screenshot 2023-09-01 at 6 09 06 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/5c641934-1c05-4a9f-97f1-d5ee23873bde">
