@@ -120,7 +120,7 @@ DELETE FROM PRODUCT
 <img width="258" alt="Screenshot 2023-09-01 at 6 34 52 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/0d8761e3-1be0-417b-9fe2-c2df2b587ea0">
 
 ##### 21.Copy the contents of field order_no and orderdate of purchase table into new table.<br>
-<br>CREATE TABLE ORDERD (
+CREATE TABLE ORDERD (
 <br>  ORDER_NO VARCHAR(15),
 <br>  ORDERDATE VARCHAR(15)
 <br>);
@@ -132,18 +132,18 @@ DELETE FROM PRODUCT
 <img width="519" alt="Screenshot 2023-09-01 at 9 47 07 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/9f132673-3431-499f-8707-6b2c309d6d84">
 
 ##### 22.Delete the newly created table.<br>
-<br>DROP TABLE ORDER;
+DROP TABLE ORDER;
 
 <img width="267" alt="Screenshot 2023-09-01 at 9 50 18 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/92e60034-6419-4914-8f10-51eda98146a4">
 
 ##### 23.Create view of customer table.<br>
-<br>CREATE VIEW CSTMR AS
+CREATE VIEW CSTMR AS
 <br>SELECT * FROM CUSTOMER;
 
 <img width="266" alt="Screenshot 2023-09-01 at 9 50 53 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/6841d917-510a-46da-8127-a334e2330c89">
 
 ##### 24.List names of customers who have placed more than one order.<br>
-<br>SELECT NAME 
+SELECT NAME 
 <br>FROM CUSTOMER, PURCHASE
 <br>WHERE CUSTOMER.CUST_NO=PURCHASE.CUSTNO AND QUANTITY>1;
 
@@ -151,7 +151,7 @@ DELETE FROM PRODUCT
 
 ##### 25.Retrieve transaction details of customer who lives in same city, obtain the result through self -join and correlated join.<br>
 #### Self Join
-<br>SELECT CSTMR.NAME, SPLR.SNAME
+SELECT CSTMR.NAME, SPLR.SNAME
 <br>FROM
 <br>   (SELECT DISTINCT NAME FROM CUSTOMER) CSTMR
 <br>   FULL OUTER JOIN
@@ -160,8 +160,8 @@ DELETE FROM PRODUCT
 
 <img width="354" alt="Screenshot 2023-09-01 at 9 56 15 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/90c14597-7f04-4379-ae0b-f4136de9ac30">
 
-###### Correlated Join
-<br>SELECT a.NAME, b.SNAME
+#### Correlated Join
+SELECT a.NAME, b.SNAME
 <br>FROM
 <br>(
 <br>SELECT DISTINCT NAME AS NAME1
@@ -178,13 +178,13 @@ DELETE FROM PRODUCT
 <img width="280" alt="Screenshot 2023-09-01 at 10 33 53 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/808cf4a7-fa38-4580-be1a-61b2a1cdab5e">
 
 ##### 26. Retrieve customer names starting with ‘R’.<br>
-<br>SELECT NAME FROM CUSTOMER
+SELECT NAME FROM CUSTOMER
 <br>WHERE NAME LIKE 'R%';
 
 <img width="239" alt="Screenshot 2023-09-01 at 10 39 51 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/93d6f276-d330-40f1-8434-93d691f47ba5">
 
 ##### 27.List names of persons who are either a supplier or a customer.<br>
-<br>SELECT CSTMR.NAME, SPLR.SNAME
+SELECT CSTMR.NAME, SPLR.SNAME
 <br>FROM
 <br>   (SELECT DISTINCT NAME FROM CUSTOMER) CSTMR
 <br>   JOIN
