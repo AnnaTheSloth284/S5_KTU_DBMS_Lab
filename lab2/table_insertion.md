@@ -59,18 +59,6 @@
 <br>+-------+----------+-------+--------+------+--------+------+
 <br>12 rows in set (0.00 sec)
 
-<br>Dependant Table Creation and Data Insertion
-<br>CREATE TABLE Dependant (
-<br>    Pid INT NOT NULL,
-<br>    Fname VARCHAR(15) NOT NULL,
-<br>    Lname VARCHAR(15) NOT NULL,
-<br>    Place VARCHAR(15) NOT NULL,
-<br>    Empno INT NOT NULL,
-<br>    PRIMARY KEY (Pid),
-<br>    FOREIGN KEY (Empno) REFERENCES Employee(Empno)
-<br>);
-
-
 <br>INSERT INTO Dependant (Pid, Fname, Lname, Place, Empno)
 <br>VALUES
 <br>    (1010, 'Anu', 'Jose', 'Trivandrum', 214),
