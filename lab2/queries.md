@@ -1,4 +1,4 @@
-<img width="428" alt="Screenshot 2023-09-02 at 1 10 49 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/2124b93c-d176-4568-be09-006b7170f85f">### Queries
+<img width="335" alt="Screenshot 2023-09-02 at 1 13 34 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/cb3fc437-dae8-4ad5-bbfa-85ba6e9804b4"><img width="428" alt="Screenshot 2023-09-02 at 1 10 49 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/2124b93c-d176-4568-be09-006b7170f85f">### Queries
 ##### 1. Return details of all managers from employee table sorted alphabetically by name.
 SELECT *
 <br>FROM Employee
@@ -127,7 +127,8 @@ SELECT Empno, Name, Salary
 <br>FROM Employee
 <br>WHERE Salary > 10000 AND Salary < 40000;
 
-<img width="428" alt="Screenshot 2023-09-02 at 1 10 49 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/bb1ce4db-0762-48a2-a193-986ef20a9dbd">
+<img width="335" alt="Screenshot 2023-09-02 at 1 13 34 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/dae861e9-6f8f-4137-89f4-ecac1f4e2a0e">
+
 
 ##### 19.Use lN operator to find NAME and EMPNO of EMPLOYEE who are analyst or manager ordered by NAME.
 SELECT Name, Empno
