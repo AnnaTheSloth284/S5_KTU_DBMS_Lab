@@ -1,3 +1,5 @@
+### Table Insertions
+#### table CUSTOMER
 <br>INSERT INTO CUSTOMER(CUST_NO, NAME, AGE, CITY, PINCODE, STATE)
 <br>VALUES ('C00001', 'Ivan Bayross', 35, 'Bombay', 400054, 'Maharashtra'),
 <br>       ('C00002', 'Vandana Saitwal', 35, 'Madras', 780001, 'Tamilnadu'),
@@ -8,6 +10,7 @@
 
 <img width="486" alt="Screenshot 2023-09-01 at 5 38 19 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/c5d4fb5c-c790-4506-853c-ab0c5a647721">
 
+#### table PRODUCT
 <br>INSERT INTO PRODUCT(PRODUCT_NO, DESCRIPTION, COMPANY, PRICE)
 <br>VALUES ('P00001', '12 W Flood Light', 'Wipro', 5000),
 <br>       ('P00002', 'Laptop Adapter', 'Dell', 1560),
@@ -17,6 +20,7 @@
 
 <img width="369" alt="Screenshot 2023-09-01 at 5 39 34 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/9039e3db-7b6f-461d-aba8-bb67864bfda6">
 
+#### table SUPPLIER
 <br>INSERT INTO SUPPLIER(S_NO, SNAME, AGE, CITY)
 <br>VALUES ('S001', 'Ivan Bayross', 35, 'Bombay'),
 <br>       ('S002', 'Nirmala Agarwal', 35, 'Madras'),
@@ -27,6 +31,7 @@
 
 <img width="299" alt="Screenshot 2023-09-01 at 5 40 53 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/bdc5fbcd-3035-4177-8fa4-d212f6f0f837">
 
+#### table PURCHASE
 <br>INSERT INTO PURCHASE(ORDER_NO, CUSTNO, PRODNO, QUANTITY, ORDERDATE)
 <br>VALUES ('O00001', 'C00002', 'P00003', 2, '2016-01-20'),
 <br>('O00002', 'C00003', 'P00002', 1, '2016-01-27'),
