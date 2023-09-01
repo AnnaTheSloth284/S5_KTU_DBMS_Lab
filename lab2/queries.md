@@ -77,65 +77,35 @@ SELECT Name, Job
 <br>FROM Employee
 <br>WHERE Sex = 'F' AND (Job = 'SLSM' OR Job = 'MNGR');
 
-<br>+----------+------+
-<br>| Name     | Job  |
-<br>+----------+------+
-<br>| Smitha   | SLSM |
-<br>| Karthika | MNGR |
-<br>| Rita     | MNGR |
-<br>| Soosan   | SLSM |
-<br>+----------+------+
-<br>4 rows in set (0.00 sec)
+<img width="419" alt="Screenshot 2023-09-02 at 1 00 01 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/b3245147-72c5-4c55-9391-5e62c9b21e67">
 
 ##### 12.Display EMPNO and NAME of employees in employee table who are a either manager or a clerk in department 50.
 SELECT Empno, Name
 <br>FROM Employee
 <br>WHERE (Job = 'MNGR' OR Job = 'CLRK') AND Dep_No = 50;
 
-<br>+-------+------+
-<br>| Empno | Name |
-<br>+-------+------+
-<br>|   110 | Tina |
-<br>|   210 | Rita |
-<br>+-------+------+
-<br>2 rows in set (0.00 sec)
+<img width="431" alt="Screenshot 2023-09-02 at 1 00 30 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/803c4a65-5eb2-498a-95e9-3fe4f18d542e">
 
 ##### 13.List the name of employee who are neither a clerk nor a salesman.
 SELECT Name
 <br>FROM Employee
 <br>WHERE Job NOT IN ('CLRK', 'SLSM');
-<br>+----------+
-<br>| Name     |
-<br>+----------+
-<br>| Roy      |
-<br>| Watson   |
-<br>| Alan     |
-<br>| Karthika |
-<br>| Rita     |
-<br>| Simpson  |
-<br>| Deepa    |
-<br>+----------+
-<br>7 rows in set (0.00 sec)
 
+<img width="297" alt="Screenshot 2023-09-02 at 1 01 14 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/f4f7b5fd-7047-418e-8bb9-3c42aa53168c">
 
 ##### 14.Return details of all clerks working in departments other than department 10.
 SELECT *
 <br>FROM Employee
 <br>WHERE Job = 'CLRK' AND Dep_No <> 10;
 
-<br>+-------+------+------+--------+------+--------+------+
-<br>| Empno | Name | Job  | Salary | Comm | Dep_No | Sex  |
-<br>+-------+------+------+--------+------+--------+------+
-<br>|   110 | Tina | CLRK |  18000 | NULL |     50 | F    |
-<br>+-------+------+------+--------+------+--------+------+
-<br>1 row in set (0.00 sec)
+<img width="396" alt="Screenshot 2023-09-02 at 1 01 47 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/dcd110f5-1d3c-4ba8-9e41-b88f3bf914cd">
 
 ##### 15. Find names of employees containing letters U and E.
 <br>SELECT Name
 <br>FROM Employee
 <br>WHERE Name LIKE '%U%' AND Name LIKE '%E%';
 
-<br>Empty set (0.00 sec)
+<img width="357" alt="Screenshot 2023-09-02 at 1 02 26 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/e8628100-a175-49e2-965f-c5e605cf420d">
 
 ##### 16.List all employee who earned commission.
 SELECT *
