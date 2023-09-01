@@ -33,3 +33,5 @@ CREATE TABLE Department (
 <br>    PRIMARY KEY (Pid),
 <br>    FOREIGN KEY (Empno) REFERENCES Employee(Empno)
 <br>);
+
+<img width="390" alt="Screenshot 2023-09-02 at 12 17 22 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/ff65983b-1dd9-4440-86a7-d74123dfdef2">
