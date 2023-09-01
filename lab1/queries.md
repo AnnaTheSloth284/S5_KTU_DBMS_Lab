@@ -134,15 +134,20 @@ DELETE FROM PRODUCT
 ##### 22.Delete the newly created table.<br>
 <br>DROP TABLE ORDER;
 
+<img width="267" alt="Screenshot 2023-09-01 at 9 50 18 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/92e60034-6419-4914-8f10-51eda98146a4">
+
 ##### 23.Create view of customer table.<br>
 <br>CREATE VIEW CSTMR AS
 <br>SELECT * FROM CUSTOMER;
+
+<img width="266" alt="Screenshot 2023-09-01 at 9 50 53 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/6841d917-510a-46da-8127-a334e2330c89">
 
 ##### 24.List names of customers who have placed more than one order.<br>
 <br>SELECT NAME 
 <br>FROM CUSTOMER, PURCHASE
 <br>WHERE CUSTOMER.CUST_NO=PURCHASE.CUSTNO AND QUANTITY>1;
 
+<img width="436" alt="Screenshot 2023-09-01 at 9 51 26 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/0c92885b-4dc5-46c1-96ce-24bd0795f641">
 
 ##### 25.Retrieve transaction details of customer who lives in same city, obtain the result through self -join and correlated join.<br>
 <br>SELECT CSTMR.NAME, SPLR.SNAME
