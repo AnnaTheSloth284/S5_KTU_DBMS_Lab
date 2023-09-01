@@ -24,6 +24,8 @@ INSERT INTO Department (Dep_No, Dep_Name, Loc, Mgr, Exp_Bdg, Rev_Bdg)
 <br>    (215, 'Deepa', 'ANLST', 27000, 60, 'F'),
 <br>    (220, 'Soosan', 'SLSM', 28500, 60, 'F');
 
+<img width="427" alt="Screenshot 2023-09-02 at 12 20 20 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/75eb9f39-923e-41b4-97b9-a92aa352b7bd">
+
 <br>UPDATE Employee
 <br>SET Comm = 3000
 <br>WHERE Empno = 101;
