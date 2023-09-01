@@ -6,18 +6,7 @@
 <br>       ('C00005', 'Ravi Sreedharan', 25, 'Delhi', 100001, 'Delhi'),
 <br>       ('C00006', 'Rukmini', 25, 'Madras', 780001, 'Tamilnadu');
 
-<br>select * from customer;
-<br>+---------+-----------------+-----+--------+---------+-------------+
-<br>| CUST_NO | NAME            | AGE | CITY   | PINCODE | STATE       |
-<br>+---------+-----------------+-----+--------+---------+-------------+
-<br>| C00001  | Ivan Bayross    |  35 | Bombay |  400054 | Maharashtra |
-<br>| C00002  | Vandana Saitwal |  35 | Madras |  780001 | Tamilnadu   |
-<br>| C00003  | Pramada Jaguste |  55 | Bombay |  400057 | Maharashtra |
-<br>| C00004  | Basu Navindgi   |  45 | Bombay |  400056 | Maharashtra |
-<br>| C00005  | Ravi Sreedharan |  25 | Delhi  |  100001 | Delhi       |
-<br>| C00006  | Rukmini         |  25 | Madras |  780001 | Tamilnadu   |
-<br>+---------+-----------------+-----+--------+---------+-------------+
-<br>6 rows in set (0.00 sec)
+<img width="486" alt="Screenshot 2023-09-01 at 5 38 19 PM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/c5d4fb5c-c790-4506-853c-ab0c5a647721">
 
 <br>INSERT INTO PRODUCT(PRODUCT_NO, DESCRIPTION, COMPANY, PRICE)
 <br>VALUES ('P00001', '12 W Flood Light', 'Wipro', 5000),
