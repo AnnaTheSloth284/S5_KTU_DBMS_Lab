@@ -119,16 +119,8 @@ SELECT Empno, Name, Job
 <br>FROM Employee
 <br>WHERE Sex = 'F' AND Job <> 'MNGR';
 
-<br>+-------+--------+-------+
-<br>| Empno | Name   | Job   |
-<br>+-------+--------+-------+
-<br>|   101 | Smitha | SLSM  |
-<br>|   110 | Tina   | CLRK  |
-<br>|   213 | Manacy | CLRK  |
-<br>|   215 | Deepa  | ANLST |
-<br>|   220 | Soosan | SLSM  |
-<br>+-------+--------+-------+
-<br>5 rows in set (0.00 sec)
+<img width="428" alt="Screenshot 2023-09-02 at 1 10 49 AM" src="https://github.com/AnnaTheSloth284/S5_KTU_DBMS_Lab/assets/112563080/bb1ce4db-0762-48a2-a193-986ef20a9dbd">
+
 
 ##### 18.Find EMPNO,NAME and SALARY of all employees who earn more than 10000 but less than 40000.
 SELECT Empno, Name, Salary
