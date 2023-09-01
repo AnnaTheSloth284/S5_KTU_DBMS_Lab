@@ -1,3 +1,4 @@
+### Table Creation
 <br>Department Table Creation and Data Insertion
 <br>CREATE TABLE Department (
 <br>    Dep_No INT PRIMARY KEY NOT NULL,
