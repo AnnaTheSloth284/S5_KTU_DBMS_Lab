@@ -1,4 +1,4 @@
-### Queries
+### Queries (1 - 20)
 ##### 1. Return details of all managers from employee table sorted alphabetically by name.
 SELECT *
 <br>FROM Employee
